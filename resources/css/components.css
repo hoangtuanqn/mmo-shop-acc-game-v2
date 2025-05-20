@@ -1,0 +1,23 @@
+@layer components {
+    .container-content {
+        @apply mx-auto max-w-7xl px-3.5;
+    }
+    .ht-button-color-primary {
+        @apply bg-primary hover:text-primary cursor-pointer rounded-lg px-4 py-2 font-medium text-white transition-all duration-200 hover:scale-105 hover:bg-[#00000010];
+    }
+    .ht-icon {
+        @apply text-lg text-[#666666];
+    }
+    .ht-item-link {
+        @apply flex items-center gap-x-2 rounded-lg px-6 py-2.5 duration-200 hover:scale-105 hover:bg-[#00000010];
+    }
+    .ht-item-link.active {
+        @apply bg-[#00000010];
+    }
+    .ht-flex-center {
+        @apply flex items-center justify-center;
+    }
+    .ht-subheadline {
+        @apply relative mb-6 pb-2.5 text-sm font-bold uppercase before:absolute before:bottom-0 before:h-[3px] before:w-[60px] before:rounded-lg before:bg-white md:text-lg;
+    }
+}

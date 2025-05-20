@@ -1,0 +1,14 @@
+@theme {
+    --font-sans:
+        "Roboto", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emo4ji";
+    --color-primary: #0a6aff;
+    --color-pink-second: #ff6cb6;
+    --color-gray-light: #f9f9f9;
+    --color-gray-dark: #666;
+}
+body {
+    font-size: 14px;
+    /* background-color: #f9fcff; */
+    background-color: #f1f5f9;
+}

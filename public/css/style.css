@@ -1,0 +1,19 @@
+.game-item_top {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ff6cb6;
+    color: white !important;
+    font-weight: 600;
+    padding: 6px 8px 25px 8px;
+    z-index: 10;
+    line-height: 0.9;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 100%, 0 75%);
+    width: 40px;
+    height: 65px;
+    /* flex-direction: column; */
+    /* justify-content: flex-start; */
+    /* align-items: center; */
+}
