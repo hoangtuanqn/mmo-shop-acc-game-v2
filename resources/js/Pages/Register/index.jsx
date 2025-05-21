@@ -5,11 +5,13 @@ import { showAlert } from "../../utils/functions";
 import { BsEyeSlashFill } from "react-icons/bs";
 import LayoutAuthentication from "../../layout/LayoutAuthentication";
 import MasterLayout from "../../layout/MasterLayout";
+import { MdEmail } from "react-icons/md";
 
 const Register = () => {
     const [data, setData] = useState({
         username: "",
         password: "",
+        email: "",
     });
     const [isShowPasssword, setIsShowPasssword] = useState(false);
     const handleChange = (e) => {
@@ -20,8 +22,8 @@ const Register = () => {
     };
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Demo
-        showAlert("success", "Đăng nhập thành công!");
+
+        showAlert("success", "Tạo tài khoản thành công!");
 
         // console.log("submit thành công");
     };
@@ -43,7 +45,22 @@ const Register = () => {
                             className="outline-primary w-full rounded-md border border-slate-300 px-4 py-2.5 text-sm text-slate-800"
                             placeholder="Tài khoản"
                         />
-                        <FaUser className="ht-icon absolute right-4" />
+                        <FaUser className="ht-icon absolute right-4 max-sm:hidden" />
+                    </div>
+                </div>
+                <div>
+                    <label className="mb-1.5 block text-sm font-medium text-slate-800">Địa Chỉ Email</label>
+                    <div className="relative flex items-center">
+                        <input
+                            name="email"
+                            type="email"
+                            onChange={handleChange}
+                            value={data?.email}
+                            required
+                            className="outline-primary w-full rounded-md border border-slate-300 px-4 py-2.5 text-sm text-slate-800"
+                            placeholder="Địa Chỉ Email (Dùng để lấy lại mật khẩu)"
+                        />
+                        <MdEmail className="ht-icon absolute right-4 max-sm:hidden" />
                     </div>
                 </div>
 
@@ -70,16 +87,12 @@ const Register = () => {
                     </div>
                 </div>
                 <div className="mt-5 flex flex-wrap items-center justify-end gap-4">
-                    <div className="text-sm">
-                        <a href="jvascript:void(0);" className="ht-item-achor">
-                            Bạn Quên Mật Khẩu?
-                        </a>
-                    </div>
+                    <div className="text-sm"></div>
                 </div>
 
                 <div className="mt-6">
                     <button type="submit" className="ht-button-color-primary w-full">
-                        Đăng Nhập
+                        Tạo Tài Khoản
                     </button>
                 </div>
             </form>
@@ -88,7 +101,7 @@ const Register = () => {
 };
 Register.layout = (page) => (
     <MasterLayout>
-        <LayoutAuthentication title="Đăng Nhập" page="login">
+        <LayoutAuthentication title="Tạo Tài Khoản" page="register">
             {page}
         </LayoutAuthentication>
     </MasterLayout>
