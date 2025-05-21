@@ -3,10 +3,11 @@ import { FaUser } from "react-icons/fa";
 import { HiEye } from "react-icons/hi";
 import { showAlert } from "../../utils/functions";
 import { BsEyeSlashFill } from "react-icons/bs";
-import LayoutAuthentication from "../../layout/LayoutAuthentication";
+import AuthenticationLayout from "../../layout/AuthenticationLayout";
 import MasterLayout from "../../layout/MasterLayout";
+import { Link } from "@inertiajs/react";
 
-const Register = () => {
+const Login = () => {
     const [data, setData] = useState({
         username: "",
         password: "",
@@ -32,7 +33,7 @@ const Register = () => {
         <>
             <form className="mt-8 space-y-5" onSubmit={handleSubmit}>
                 <div>
-                    <label className="mb-1.5 block text-sm font-medium text-slate-800">Tài khoản</label>
+                    <label className="mb-1.5 block text-sm font-medium text-slate-800">Tài Khoản</label>
                     <div className="relative flex items-center">
                         <input
                             name="username"
@@ -48,7 +49,7 @@ const Register = () => {
                 </div>
 
                 <div>
-                    <label className="mb-1.5 block text-sm font-medium text-slate-800">Mật khẩu</label>
+                    <label className="mb-1.5 block text-sm font-medium text-slate-800">Mật Khẩu</label>
                     <div className="relative flex items-center">
                         <input
                             name="password"
@@ -71,9 +72,9 @@ const Register = () => {
                 </div>
                 <div className="mt-5 flex flex-wrap items-center justify-end gap-4">
                     <div className="text-sm">
-                        <a href="jvascript:void(0);" className="ht-item-achor">
+                        <Link href="/forgot-password" className="ht-item-achor">
                             Bạn Quên Mật Khẩu?
-                        </a>
+                        </Link>
                     </div>
                 </div>
 
@@ -86,11 +87,11 @@ const Register = () => {
         </>
     );
 };
-Register.layout = (page) => (
+Login.layout = (page) => (
     <MasterLayout>
-        <LayoutAuthentication title="Đăng Nhập" page="login">
+        <AuthenticationLayout title="Đăng Nhập" page="login">
             {page}
-        </LayoutAuthentication>
+        </AuthenticationLayout>
     </MasterLayout>
 );
-export default Register;
+export default Login;
