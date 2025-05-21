@@ -6,6 +6,20 @@
     --color-pink-second: #ff6cb6;
     --color-gray-light: #f9f9f9;
     --color-gray-dark: #666;
+    --animate-scaleUp: scaleUp 0.3s ease-in-out;
+    @keyframes scaleUp {
+        0% {
+            transform: scale(0.8);
+            opacity: 0;
+        }
+        50% {
+            transform: scale(1.05);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
 }
 body {
     font-size: 14px;

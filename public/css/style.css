@@ -1,3 +1,6 @@
+::root {
+    --color-primary: #0a6aff;
+}
 .game-item_top {
     position: absolute;
     top: 0;
@@ -13,4 +16,19 @@
     clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 100%, 0 75%);
     width: 40px;
     height: 65px;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color: #;
+    border: 1px solid #cacaca;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: var(--color-primary);
 }
