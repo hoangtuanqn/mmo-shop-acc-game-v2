@@ -6,6 +6,7 @@ import { BsEyeSlashFill } from "react-icons/bs";
 import AuthenticationLayout from "../../layout/AuthenticationLayout";
 import MasterLayout from "../../layout/MasterLayout";
 import { Link } from "@inertiajs/react";
+import { route } from "ziggy-js";
 
 const Login = () => {
     const [data, setData] = useState({
@@ -72,7 +73,7 @@ const Login = () => {
                 </div>
                 <div className="mt-5 flex flex-wrap items-center justify-end gap-4">
                     <div className="text-sm">
-                        <Link href="/forgot-password" className="ht-item-achor">
+                        <Link href={route("auth.forgot-password")} className="ht-item-achor">
                             Bạn Quên Mật Khẩu?
                         </Link>
                     </div>

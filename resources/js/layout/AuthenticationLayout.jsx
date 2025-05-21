@@ -2,36 +2,36 @@ import React, { useState } from "react";
 import AppHead from "../components/AppHead";
 import MasterLayout from "./MasterLayout";
 import { Link } from "@inertiajs/react";
+import { route } from "ziggy-js";
 export default function LayoutAuthentication({ children, title, page }) {
     const infoPage = {
         login: {
             isLoginSocial: true,
             heading: "Đăng Nhập",
             description: "Đăng Nhập Tại Hệ Thống Của Chúng Tôi",
-            url: "/register",
+            nameRoute: "auth.register",
             prefixAction: "Bạn chưa có tài khoản?",
             action: "Tạo Tài Khoản Ngay",
         },
         register: {
             isLoginSocial: true,
-
             heading: "Tạo Tài Khoản",
             description: "Tạo Tài Khoản Tại Hệ Thống Của Chúng Tôi",
-            url: "/login",
+            nameRoute: "auth.login",
             prefixAction: "Bạn đã có tài khoản?",
             action: "Đăng Nhập Ngay",
         },
         "forgot-password": {
             heading: "Đặt Lại Mật Khẩu",
             description: "Nhập Địa Chỉ Email Để Nhận Liên Kết Đặt Lại Mật Khẩu",
-            url: "",
+            nameRoute: "",
             prefixAction: "",
             action: "",
         },
         "confirm-reset-password": {
             heading: "Đặt Mật Khẩu Mới",
             description: "Đặt Mật Khẩu Mới Cho Tài Khoản Của Bạn",
-            url: "",
+            nameRoute: "",
             prefixAction: "",
             action: "",
         },
@@ -47,32 +47,32 @@ export default function LayoutAuthentication({ children, title, page }) {
                         <img
                             src="https://dl.dir.freefiremobile.com/common/web_event/official2.ff.garena.all/20252/e2db986698da6234e12f3ba3b4ffcfba.jpg"
                             alt=""
-                            className="object-cover w-full h-full"
+                            className="h-full w-full object-cover"
                         />
                     </div>
-                    <div className="flex flex-col items-center justify-center col-span-2 px-8 py-16 lg:col-span-1">
+                    <div className="col-span-2 flex flex-col items-center justify-center px-8 py-16 lg:col-span-1">
                         <div className="w-full max-w-md">
                             <div className="text-gray-700">
-                                <h2 className="text-xl font-semibold text-center text-slate-900 md:text-2xl">
+                                <h2 className="text-center text-xl font-semibold text-slate-900 md:text-2xl">
                                     {data.heading}
                                 </h2>
-                                <p className="mt-2 text-xs font-semibold text-center text-gray-500 md:text-sm">
+                                <p className="mt-2 text-center text-xs font-semibold text-gray-500 md:text-sm">
                                     {data.description}
                                 </p>
                                 {children}
                                 {data.isLoginSocial && (
                                     <>
-                                        <div class="my-4 flex items-center gap-4">
-                                            <hr class="w-full border-gray-300" />
-                                            <p class="text-center text-sm text-gray-400">hoặc</p>
-                                            <hr class="w-full border-gray-300" />
+                                        <div className="my-4 flex items-center gap-4">
+                                            <hr className="w-full border-gray-300" />
+                                            <p className="text-center text-sm text-gray-400">hoặc</p>
+                                            <hr className="w-full border-gray-300" />
                                         </div>
 
-                                        <div class="flex justify-center space-x-6">
-                                            <button type="button" class="cursor-pointer border-0 outline-0">
+                                        <div className="flex justify-center space-x-6">
+                                            <button type="button" className="cursor-pointer border-0 outline-0">
                                                 <svg
                                                     xmlns="http://www.w3.org/2000/svg"
-                                                    class="h-6 w-6"
+                                                    className="h-6 w-6"
                                                     viewBox="0 0 512 512"
                                                 >
                                                     <path
@@ -107,10 +107,10 @@ export default function LayoutAuthentication({ children, title, page }) {
                                                     />
                                                 </svg>
                                             </button>
-                                            <button type="button" class="cursor-pointer border-0 outline-0">
+                                            <button type="button" className="cursor-pointer border-0 outline-0">
                                                 <svg
                                                     xmlns="http://www.w3.org/2000/svg"
-                                                    class="h-6 w-6"
+                                                    className="h-6 w-6"
                                                     viewBox="0 0 512 512"
                                                 >
                                                     <path
@@ -129,11 +129,13 @@ export default function LayoutAuthentication({ children, title, page }) {
                                     </>
                                 )}
 
-                                <p className="mt-6 text-xs leading-5 text-center uppercase text-slate-800 md:text-sm">
+                                <p className="mt-6 text-center text-xs leading-5 text-slate-800 uppercase md:text-sm">
                                     {data.prefixAction}
-                                    <Link href={data.url} className="ht-item-achor">
-                                        {data.action}
-                                    </Link>
+                                    {data.nameRoute && (
+                                        <Link href={route(data.nameRoute)} className="ht-item-achor">
+                                            {data.action}
+                                        </Link>
+                                    )}
                                 </p>
                             </div>
                         </div>
