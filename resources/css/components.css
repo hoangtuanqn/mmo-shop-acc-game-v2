@@ -2,6 +2,7 @@
     .container-content {
         @apply mx-auto max-w-7xl px-3.5;
     }
+
     .ht-button-color-primary {
         @apply from-primary cursor-pointer rounded-lg bg-gradient-to-r to-blue-500 px-8 py-2 text-center font-semibold text-white shadow transition hover:from-blue-600 hover:to-indigo-600;
     }

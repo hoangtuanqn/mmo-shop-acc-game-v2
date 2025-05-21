@@ -17,7 +17,7 @@ export default function Footer() {
             <div className="bg-[#151E33] px-2 py-15">
                 <div className="container-content grid grid-cols-1 gap-12 border-b-2 border-[#ffffff26] pb-10 text-white sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
                     <div>
-                        <img src="/images/logo-footer.png" alt="Logo Footer" className="mb-6 w-[200px]" />
+                        <img src="/images/logo-footer.png" alt="Logo Footer" className="mb-6 w-[140px] md:w-[200px]" />
                         <p className="mb-6">
                             Shop Ngọc Rồng Online cung cấp tài khoản game chính hãng, giá tốt nhất thị trường. Giao dịch
                             an toàn, nhanh chóng và bảo mật

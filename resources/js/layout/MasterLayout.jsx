@@ -5,13 +5,13 @@ import Footer from "../components/Footer";
 
 export default function MasterLayout({ children }) {
     return (
-        <>
+        <div className="flex min-h-screen flex-col justify-between">
             <Head>
                 <title>Trang chủ</title>
             </Head>
             <Header />
             <div className="container-content">{children}</div>
             <Footer />
-        </>
+        </div>
     );
 }
