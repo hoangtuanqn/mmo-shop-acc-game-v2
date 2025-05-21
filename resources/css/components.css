@@ -20,4 +20,5 @@
     .ht-subheadline {
         @apply relative mb-6 pb-2.5 text-sm font-bold uppercase before:absolute before:bottom-0 before:h-[3px] before:w-[60px] before:rounded-lg before:bg-white md:text-lg;
     }
+
 }

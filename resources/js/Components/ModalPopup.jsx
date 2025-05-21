@@ -21,13 +21,13 @@ export default function ModalPopup() {
                     name="close"
                     onClick={handleClose}
                 >
-                    <div className="relative top-[5%] h-fit w-[90%] max-w-[600px] overflow-hidden rounded-lg bg-gradient-to-br from-white to-[#f5f8ff] p-6 shadow-lg">
-                        <h2 className="text-primary ht-flex-center gap-x-2 border-b border-gray-200 py-2 text-center text-xl font-extrabold uppercase">
+                    <div className="animate-scaleUp relative top-[5%] h-fit w-[90%] max-w-[600px] overflow-hidden rounded-lg bg-gradient-to-br from-white to-[#f5f8ff] p-6 shadow-lg">
+                        <h2 className="text-primary ht-flex-center gap-x-2 border-b border-gray-200 pt-2 pb-4 text-center text-xl font-extrabold uppercase">
                             <FaBell />
                             Thông báo
                             <FaBell />
                         </h2>
-                        <div className="content text-md py-4 leading-6 text-gray-700">
+                        <div className="content text-md mt-2 py-4 leading-6 text-gray-700">
                             <h3 className="text-lg font-semibold text-gray-800">
                                 Chào mừng bạn đến với dịch vụ bán tài khoản game của chúng tôi!
                             </h3>
