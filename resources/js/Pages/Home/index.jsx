@@ -1,4 +1,5 @@
 import React from "react";
+import { Head } from "@inertiajs/react";
 import Header from "../../Components/Header";
 import CategoryCommon from "./CategoryCommon";
 import { dataCategoriesCommon, dataCategoriesGame, dataCategoriesLucky, dataCategoriesService } from "./fakerData";
@@ -9,10 +10,14 @@ import Footer from "../../Components/Footer";
 import Hero from "./Hero";
 import Popup from "../../Components/Popup";
 import MarqueeData from "./MarqueeData";
+import ModalPopup from "../../Components/ModalPopup";
 
 export default function Home() {
     return (
         <>
+            <Head>
+                <title>Trang chủ</title>
+            </Head>
             <Header />
             <div className="container-content">
                 {/* <Popup /> */}
@@ -36,6 +41,7 @@ export default function Home() {
                 <CategoryLucky data={dataCategoriesLucky} />
             </div>
             <Footer />
+            <ModalPopup />
         </>
     );
 }

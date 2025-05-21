@@ -18,7 +18,10 @@ export default function Ranking() {
             <div className="rounded-b-lg bg-white p-4 shadow-[0_5px_15px_#00000008]">
                 {rankinger.length > 0 ? (
                     rankinger.map((item, key) => (
-                        <div className="mb-2 flex cursor-pointer items-center justify-between rounded-lg px-4 py-3 duration-200 odd:bg-[#4f46e50d] hover:scale-105">
+                        <div
+                            key={`Ranking${item.id}`}
+                            className="mb-2 flex cursor-pointer items-center justify-between rounded-lg px-4 py-3 duration-200 odd:bg-[#4f46e50d] hover:scale-105"
+                        >
                             <div className="flex items-center gap-2">
                                 <img
                                     src={`/images/icons/${key + 1}.svg`}

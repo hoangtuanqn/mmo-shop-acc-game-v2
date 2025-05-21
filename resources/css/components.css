@@ -3,7 +3,7 @@
         @apply mx-auto max-w-7xl px-3.5;
     }
     .ht-button-color-primary {
-        @apply bg-primary hover:text-primary cursor-pointer rounded-lg px-4 py-2 font-medium text-white transition-all duration-200 hover:scale-105 hover:bg-[#00000010];
+        @apply from-primary cursor-pointer rounded-lg bg-gradient-to-r to-blue-500 px-8 py-2 text-center font-semibold text-white shadow transition hover:from-blue-600 hover:to-indigo-600;
     }
     .ht-icon {
         @apply text-lg text-[#666666];

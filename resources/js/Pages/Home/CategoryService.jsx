@@ -32,10 +32,12 @@ export default function CategoryService({ nameCategory, data }) {
                                 {category.name}
                             </h2>
                             <div className="flex-col gap-2 ht-flex-center text-gray-dark lg:flex-row">
-                                <span className="px-3 py-2 rounded-full bg-gray-light ht-flex-center w-fit gap-x-2">
-                                    <FaShoppingCart />
+                                <span className="px-3 py-2 rounded-full bg-gray-light ht-flex-center w-fit gap-x-1">
+                                    <FaShoppingCart  />
                                     Đã thuê:
-                                    <span className="font-semibold text-primary">{formatNumber(category.sold)}</span>
+                                    <span className="font-semibold text-primary">
+                                        {formatNumber(category.sold)}
+                                    </span>
                                 </span>
                             </div>
                             <img

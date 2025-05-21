@@ -16,8 +16,8 @@ export const dataCategoriesCommon = [
     },
     {
         id: 4,
-        name: "Liên Minh Tốc Chiến",
-        image: "https://play-lh.googleusercontent.com/9ymE9DZrj2CNk9vdpITCUj6m6en__mzf4DvQlS0u8So1g3qhE1VQ9Y0R5H3jBFbOiynW",
+        name: "Tốc Chiến",
+        image: "https://shopgame247.com/assets/images/gametoc-chien_80177775.png",
     },
     {
         id: 5,
