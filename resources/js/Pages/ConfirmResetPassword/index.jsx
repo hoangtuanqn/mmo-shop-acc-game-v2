@@ -55,7 +55,7 @@ const ConfirmResetPassword = ({ email }) => {
                             value={data?.password}
                             required
                             className="outline-primary w-full rounded-md border border-slate-300 px-4 py-3 text-sm text-slate-800"
-                            placeholder="Mật khẩu của bạn"
+                            placeholder="Mật khẩu mới của bạn"
                         />
                         {isShowPasssword ? (
                             <BsEyeSlashFill
@@ -77,7 +77,7 @@ const ConfirmResetPassword = ({ email }) => {
                             value={data?.password_confirmation}
                             required
                             className="outline-primary w-full rounded-md border border-slate-300 px-4 py-3 text-sm text-slate-800"
-                            placeholder="Mật khẩu của bạn"
+                            placeholder="Nhập lại mật khẩu"
                         />
                         {isShowPasssword ? (
                             <BsEyeSlashFill

@@ -6,7 +6,7 @@ use Inertia\Inertia;
 Route::get('/', function () {
     return Inertia::render('Home/index');
 });
-Route::prefix("auth")->group(function () {
+Route::prefix("auth")->name('auth.')->group(function () {
     Route::get('/login', function () {
         return Inertia::render('Login/index');
     })->name('login');
@@ -17,7 +17,7 @@ Route::prefix("auth")->group(function () {
 
     Route::get('/forgot-password', function () {
         return Inertia::render('ForgotPassword/index');
-    })->name('forgor-password');
+    })->name('forgot-password');
 
     Route::get('/confirm-reset-password', function () {
         // Demo truyền email xuống, sau này lấy token, sau đó mới truyền email xuống
@@ -25,4 +25,4 @@ Route::prefix("auth")->group(function () {
             "email" => 'phamhoangtuanqn@gmail.com'
         ]);
     })->name('confirm-reset-password');
-})->name('auth.');
+});

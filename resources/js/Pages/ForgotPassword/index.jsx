@@ -25,40 +25,16 @@ const ForgotPassword = () => {
                             className="outline-primary w-full rounded-md border border-slate-300 px-4 py-2.5 text-sm text-slate-800"
                             placeholder="Nhập Địa Chỉ Email"
                         />
-                        <MdEmail className="absolute ht-icon right-4 max-sm:hidden" />
+                        <MdEmail className="ht-icon absolute right-4 max-sm:hidden" />
                     </div>
                 </div>
 
-                <div>
-                    <label className="mb-1.5 block text-sm font-medium text-slate-800">Mật khẩu</label>
-                    <div className="relative flex items-center">
-                        <input
-                            name="password"
-                            type={isShowPasssword ? "text" : "password"}
-                            onChange={handleChange}
-                            value={data?.password}
-                            required
-                            className="w-full px-4 py-3 text-sm border rounded-md outline-primary border-slate-300 text-slate-800"
-                            placeholder="Mật khẩu của bạn"
-                        />
-                        {isShowPasssword ? (
-                            <BsEyeSlashFill
-                                className="absolute cursor-pointer ht-icon right-4"
-                                onClick={handleShowPassword}
-                            />
-                        ) : (
-                            <HiEye className="absolute cursor-pointer ht-icon right-4" onClick={handleShowPassword} />
-                        )}
-                    </div>
-                </div>
-                
-
-                <div className="flex flex-wrap items-center justify-end gap-4 mt-5">
+                <div className="mt-5 flex flex-wrap items-center justify-end gap-4">
                     <div className="text-sm"></div>
                 </div>
 
                 <div className="mt-6">
-                    <button type="submit" className="w-full ht-button-color-primary">
+                    <button type="submit" className="ht-button-color-primary w-full">
                         Đặt Lại Mật Khẩu
                     </button>
                 </div>
