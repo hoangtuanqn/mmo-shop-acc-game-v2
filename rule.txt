@@ -7,3 +7,6 @@ xl	80rem (1280px)	@media (width >= 80rem) { ... }
 2xl	96rem (1536px)	@media (width >= 96rem) { ... }
 
 - unique() vì có nhiều key trùng nhau, vì nó toàn là số 1-2-3... thôi
+
+- Lưu ý các phần tử đều phải có thuộc tính id, để làm key
+- Fix lại tiêu đề
