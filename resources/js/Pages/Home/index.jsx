@@ -29,7 +29,7 @@ export default function Home() {
 
             {/* Danh mục Vòng quay may mắn */}
             <CategoryLucky data={dataCategoriesLucky} />
-            <ModalPopup />
+            {/* <ModalPopup /> */}
         </>
     );
 }
