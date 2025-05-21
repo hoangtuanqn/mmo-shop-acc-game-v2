@@ -5,13 +5,14 @@ import { FaHome, FaCoins, FaHistory, FaMoneyBillWave, FaNewspaper, FaUser, FaReg
 
 export default function Header() {
     const { url } = usePage();
+    
 
     return (
-        <header className="ht-background-blur sticky top-2 z-50 mx-4 mt-4 mb-16 rounded-lg bg-white shadow-sm">
-            <div className="container-content mx-auto flex items-center justify-between py-3">
+        <header className="sticky z-50 mx-4 mt-4 bg-white rounded-lg shadow-sm ht-background-blur top-2 mb-9">
+            <div className="flex items-center justify-between py-3 mx-auto container-content">
                 {/* Logo */}
                 <Link href="/" className="flex items-center gap-2">
-                    <img src="/images/logo.png" alt="Logo Website" className="h-auto w-34 object-contain" />
+                    <img src="/images/logo.png" alt="Logo Website" className="object-contain h-auto w-34" />
                 </Link>
 
                 {/* Desktop Menu */}
@@ -40,13 +41,13 @@ export default function Header() {
                 <div className="hidden gap-2 xl:flex">
                     <Link
                         href="/login"
-                        className="rounded-lg border-blue-500 px-5 py-2 text-center font-semibold text-blue-500 transition hover:bg-blue-50"
+                        className="px-5 py-2 font-semibold text-center text-blue-500 transition border-blue-500 rounded-lg hover:bg-blue-50"
                     >
                         Đăng nhập
                     </Link>
                     <Link
                         href="/register"
-                        className="from-primary rounded-lg bg-gradient-to-r to-blue-500 px-8 py-2 text-center font-semibold text-white shadow transition hover:from-blue-600 hover:to-indigo-600"
+                        className="px-8 py-2 font-semibold text-center text-white transition rounded-lg shadow from-primary bg-gradient-to-r to-blue-500 hover:from-blue-600 hover:to-indigo-600"
                     >
                         Đăng ký
                     </Link>
@@ -56,7 +57,7 @@ export default function Header() {
                 <div className="flex items-center gap-2 xl:hidden">
                     <Link
                         href="/login"
-                        className="rounded-full bg-blue-100 p-2 text-blue-600 transition hover:bg-blue-200"
+                        className="p-2 text-blue-600 transition bg-blue-100 rounded-full hover:bg-blue-200"
                     >
                         <FaRegUser size={22} />
                     </Link>
