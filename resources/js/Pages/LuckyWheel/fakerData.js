@@ -103,3 +103,55 @@ export const ranking7Day = [
         plays: 150,
     },
 ];
+
+export const winningSlot = {
+    real: 1,
+    trial: 6,
+    message: "Chúc mừng bạn đã trúng 500 kim cương!",
+};
+export const messageWinning = [
+    {
+        id: 1,
+        message: "Chúc mừng bạn đã trúng 88 robux!",
+    },
+    {
+        id: 2,
+        message: "Chúc mừng bạn đã trúng 188 robux!",
+    },
+    {
+        id: 3,
+        message: "Chúc mừng bạn đã trúng 288 robux!",
+    },
+    {
+        id: 4,
+        message: "Chúc mừng bạn đã trúng 288 robux!",
+    },
+    {
+        id: 5,
+        message: "Chúc mừng bạn đã trúng 488 robux!",
+    },
+    {
+        id: 6,
+        message: "Chúc mừng bạn đã trúng 588 robux!",
+    },
+    {
+        id: 7,
+        message: "Chúc mừng bạn đã trúng 1000 robux!",
+    },
+    {
+        id: 8,
+        message: "Chúc mừng bạn đã trúng 8888 robux!",
+    },
+];
+export const topUpRewards = [
+    { id: 1, balance: 200 },
+    { id: 2, balance: 180 },
+    { id: 3, balance: 160 },
+    { id: 4, balance: 140 },
+    { id: 5, balance: 120 },
+    { id: 6, balance: 100 },
+    { id: 7, balance: 80 },
+    { id: 8, balance: 60 },
+    { id: 9, balance: 40 },
+    { id: 10, balance: 20 },
+];

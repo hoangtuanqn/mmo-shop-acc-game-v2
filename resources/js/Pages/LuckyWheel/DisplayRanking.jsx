@@ -6,16 +6,16 @@ function DisplayRanking({ data }) {
         <>
             {data.length <= 0 ? (
                 <>
-                    <p className="mt-6 text-center text-base font-bold">Hiện chưa có dữ liệu</p>
+                    <p className="mt-6 text-base font-bold text-center">Hiện chưa có dữ liệu</p>
                 </>
             ) : (
-                <ul className="py-4">
+                <ul className="pt-4">
                     {data.map((item, key) => (
                         <li
                             className="flex items-center gap-2 rounded-sm px-2 py-2 even:bg-[#F8F8FC]"
                             key={`${item.name}-${item.id}`}
                         >
-                            <div className="flex aspect-square w-6 items-center justify-center rounded-full border border-gray-300">
+                            <div className="flex items-center justify-center w-6 border border-gray-300 rounded-full aspect-square">
                                 <span className="text-xs font-bold">{key + 1}</span>
                             </div>
                             <div className="flex items-center gap-2">
