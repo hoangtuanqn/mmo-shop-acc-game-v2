@@ -14,7 +14,6 @@ export default function Filter() {
             ...data,
             [e.target.name]: [e.target.value],
         });
-        console.log(e.target.value);
     };
     const handleSubmit = (e) => {
         e.preventDefault();

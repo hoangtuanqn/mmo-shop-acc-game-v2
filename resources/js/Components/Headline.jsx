@@ -2,11 +2,13 @@ import { Link } from "@inertiajs/react";
 import React from "react";
 import { FaArrowTrendUp } from "react-icons/fa6";
 
-export default function HeadLine({ nameCategory, url = "" }) {
+export default function HeadLine({ title, url = "", customHeading }) {
     return (
         <div className="flex items-start justify-between">
-            <h2 className="before:bg-primary relative mb-6 pb-2.5 text-sm font-bold uppercase before:absolute before:bottom-0 before:h-[3px] before:w-[60px] before:rounded-lg md:text-2xl">
-                {nameCategory}
+            <h2
+                className={`before:bg-primary relative mb-6 pb-2.5 text-sm font-bold uppercase before:absolute before:bottom-0 before:h-[3px] before:w-[60px] before:rounded-lg md:text-2xl ${customHeading}`}
+            >
+                {title}
             </h2>
             {url && (
                 <Link

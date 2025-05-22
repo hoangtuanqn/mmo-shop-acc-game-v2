@@ -32,13 +32,13 @@ const ConfirmResetPassword = ({ email }) => {
         <>
             <form className="mt-8 space-y-5" onSubmit={handleSubmit}>
                 <div>
-                    <label className="mb-1.5 block text-sm font-medium text-slate-800">Địa Chỉ Email</label>
+                    <label className="mb-2 block text-sm font-medium text-slate-800">Địa Chỉ Email</label>
                     <div className="relative flex items-center">
                         <input
                             type="email"
                             value={email}
                             required
-                            className="outline-primary w-full rounded-md border border-slate-300 px-4 py-2.5 text-sm text-slate-800 disabled:cursor-not-allowed disabled:bg-gray-100"
+                            className="outline-primary w-full rounded-md border border-slate-300 px-4 py-2.5 pr-10 text-sm text-slate-800 disabled:cursor-not-allowed disabled:bg-gray-100"
                             placeholder="Địa Chỉ Email"
                             disabled
                         />
@@ -46,7 +46,7 @@ const ConfirmResetPassword = ({ email }) => {
                     </div>
                 </div>
                 <div>
-                    <label className="mb-1.5 block text-sm font-medium text-slate-800">Nhập Mật Khẩu Mới</label>
+                    <label className="mb-2 block text-sm font-medium text-slate-800">Nhập Mật Khẩu Mới</label>
                     <div className="relative flex items-center">
                         <input
                             name="password"
@@ -54,7 +54,7 @@ const ConfirmResetPassword = ({ email }) => {
                             onChange={handleChange}
                             value={data?.password}
                             required
-                            className="outline-primary w-full rounded-md border border-slate-300 px-4 py-3 text-sm text-slate-800"
+                            className="outline-primary w-full rounded-md border border-slate-300 px-4 py-3 pr-10 text-sm text-slate-800"
                             placeholder="Mật khẩu mới của bạn"
                         />
                         {isShowPasssword ? (
@@ -68,7 +68,7 @@ const ConfirmResetPassword = ({ email }) => {
                     </div>
                 </div>{" "}
                 <div>
-                    <label className="mb-1.5 block text-sm font-medium text-slate-800">Nhập Lại Mật khẩu</label>
+                    <label className="mb-2 block text-sm font-medium text-slate-800">Nhập Lại Mật khẩu</label>
                     <div className="relative flex items-center">
                         <input
                             name="password_confirmation"
@@ -76,7 +76,7 @@ const ConfirmResetPassword = ({ email }) => {
                             onChange={handleChange}
                             value={data?.password_confirmation}
                             required
-                            className="outline-primary w-full rounded-md border border-slate-300 px-4 py-3 text-sm text-slate-800"
+                            className="outline-primary pr-10pr-10 w-full rounded-md border border-slate-300 px-4 py-3 text-sm text-slate-800"
                             placeholder="Nhập lại mật khẩu"
                         />
                         {isShowPasssword ? (
