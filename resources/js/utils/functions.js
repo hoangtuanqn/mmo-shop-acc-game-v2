@@ -18,3 +18,7 @@ export function showAlert(status = "success", message) {
         icon: status,
     });
 }
+export function random(a, b) {
+    // random [a,b]
+    return Math.floor(Math.random() * (b - a + 1)) + a;
+}

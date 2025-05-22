@@ -3,6 +3,7 @@ import AppHead from "../../components/AppHead";
 import HeadLineCenter from "../../components/HeadLineCenter";
 import Description from "../../components/Description";
 import Lucky from "./Lucky";
+import ActionFixedBottom from "./ActionFixedBottom";
 
 export default function index() {
     return (
@@ -11,7 +12,7 @@ export default function index() {
             <div className="mb-20">
                 <HeadLineCenter title="VÒNG QUAY MAY MẮN ROBLOX" />
                 <div className="flex flex-col">
-                    <div className="order-2 md:order-1">
+                    <div className="order-2 lg:order-1">
                         <Description>
                             <h2>Giới thiệu về vòng quay may mắn ROBLOX</h2>
                             <p>
@@ -21,11 +22,12 @@ export default function index() {
                         </Description>
                     </div>
 
-                    <div className="order-1 md:order-2">
+                    <div className="order-1 lg:order-2">
                         <Lucky />
                     </div>
                 </div>
             </div>
+           
         </>
     );
 }

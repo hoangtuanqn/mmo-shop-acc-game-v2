@@ -1,16 +1,17 @@
 import clsx from "clsx";
 import React, { useState } from "react";
 import { FaMedal } from "react-icons/fa";
-import { ranking7Day, rankingDay } from "./fakerData";
+import { ranking7Day, rankingDay, topUpRewards } from "./fakerData";
 import DisplayRanking from "./DisplayRanking";
 import LoadingAnimation from "../../components/LoadingAnimation";
+import DisplayTopUpRewards from "./DisplayTopUpRewards";
 
 export default function Ranking() {
     const [activeNav, setActiveNav] = useState(1);
     const listNav = ["Hôm nay", "7 Ngày", "Quà đua top"];
     const ok = [];
     return (
-        <div className="mt-6">
+        <div className="mt-3 mb-6">
             <h3 className="flex items-center text-xl font-bold">
                 <FaMedal className="mr-2 text-yellow-400" />
                 <span>Top quay thưởng</span>
@@ -36,6 +37,11 @@ export default function Ranking() {
             {activeNav === 2 && (
                 <LoadingAnimation>
                     <DisplayRanking data={ranking7Day} />
+                </LoadingAnimation>
+            )}
+            {activeNav === 3 && (
+                <LoadingAnimation>
+                    <DisplayTopUpRewards topUpRewards={topUpRewards} />
                 </LoadingAnimation>
             )}
         </div>
