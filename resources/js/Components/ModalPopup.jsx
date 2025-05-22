@@ -17,11 +17,11 @@ export default function ModalPopup() {
         <>
             {status && (
                 <div
-                    className="bg-opacity-70 fixed inset-0 z-50 flex justify-center overflow-hidden bg-[#000000b3]"
+                    className="bg-opacity-70 fixed inset-0 z-50 flex justify-center overflow-hidden bg-[#0006]"
                     name="close"
                     onClick={handleClose}
                 >
-                    <div className="animate-scaleUp relative top-[5%] h-fit w-[90%] max-w-[600px] overflow-hidden rounded-lg bg-gradient-to-br from-white to-[#f5f8ff] p-6 shadow-lg">
+                    <div className="animate-scaleUp relative top-3 h-fit w-[90%] max-w-[600px] overflow-hidden rounded-lg bg-gradient-to-br from-white to-[#f5f8ff] p-6 shadow-lg">
                         <h2 className="pt-2 pb-4 text-xl font-extrabold text-center uppercase border-b border-gray-200 text-primary ht-flex-center gap-x-2">
                             <FaBell />
                             Thông báo

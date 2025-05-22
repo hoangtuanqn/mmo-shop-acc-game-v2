@@ -1,12 +1,12 @@
 import React from "react";
 import CategoryCommon from "./CategoryCommon";
-import { dataCategoriesCommon, dataCategoriesGame, dataCategoriesLucky, dataCategoriesService } from "./fakerData";
 import CategoryGame from "./CategoryGame";
 import CategoryService from "./CategoryService";
 import CategoryLucky from "./CategoryLucky";
 import Hero from "./Hero";
 import MarqueeData from "./MarqueeData";
 import ModalPopup from "../../Components/ModalPopup";
+import { dataCategoriesCommon, dataCategoriesGame, dataCategoriesLucky, dataCategoriesService } from "./fakerData";
 
 export default function Home() {
     return (
