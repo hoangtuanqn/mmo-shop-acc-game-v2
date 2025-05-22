@@ -49,7 +49,7 @@
 }
 
 /* Text Editor */
-.game-description {
+.htcustom-description {
     padding: 25px;
     border: none;
     background-color: #f8fafc;
@@ -62,7 +62,7 @@
     overflow: hidden;
 }
 
-.game-description::before {
+.htcustom-description::before {
     content: "";
     position: absolute;
     top: 0;
@@ -71,7 +71,7 @@
     height: 100%;
     background: linear-gradient(to bottom, var(--color-primary), #4f46e5);
 }
-.game-description h1 {
+.htcustom-description h1 {
     font-size: 2.4rem;
     font-weight: 700;
     color: #1e293b;
@@ -81,7 +81,7 @@
     position: relative;
 }
 
-.game-description h1::after {
+.htcustom-description h1::after {
     content: "";
     position: absolute;
     bottom: -2px;
@@ -91,7 +91,7 @@
     background-color: var(--color-primary);
 }
 
-.game-description h2 {
+.htcustom-description h2 {
     font-size: 20px;
     font-weight: 700;
     color: #1e293b;
@@ -101,7 +101,7 @@
     position: relative;
 }
 
-.game-description h2::after {
+.htcustom-description h2::after {
     content: "";
     position: absolute;
     bottom: -2px;
@@ -111,51 +111,51 @@
     background-color: var(--color-primary);
 }
 
-.game-description h3 {
+.htcustom-description h3 {
     font-size: 18px;
     font-weight: 600;
     color: #334155;
     margin: 22px 0 14px;
 }
 
-.game-description h4 {
+.htcustom-description h4 {
     font-size: 16px;
     font-weight: 600;
     color: #334155;
     margin: 20px 0 12px;
 }
 
-.game-description h5 {
+.htcustom-description h5 {
     font-size: 15px;
     font-weight: 600;
     color: #334155;
     margin: 18px 0 10px;
 }
 
-.game-description h6 {
+.htcustom-description h6 {
     font-size: 16px;
     font-weight: 600;
     color: #334155;
     margin: 16px 0 10px;
 }
 
-.game-description p {
+.htcustom-description p {
     margin-bottom: 18px;
     color: #4b5563;
 }
 
-.game-description ul,
-.game-description ol {
+.htcustom-description ul,
+.htcustom-description ol {
     margin: 0 0 20px 25px;
 }
 
-.game-description li {
+.htcustom-description li {
     margin-bottom: 10px;
     position: relative;
     padding-left: 5px;
 }
 
-.game-description ul li::before {
+.htcustom-description ul li::before {
     content: "•";
     position: absolute;
     left: -18px;
@@ -163,17 +163,17 @@
     font-size: 16px;
 }
 
-.game-description strong {
+.htcustom-description strong {
     font-weight: 600;
     color: #1e293b;
 }
 
-.game-description em {
+.htcustom-description em {
     font-style: italic;
     color: #4b5563;
 }
 
-.game-description a {
+.htcustom-description a {
     color: var(--color-primary);
     text-decoration: none;
     font-weight: 500;
@@ -181,7 +181,7 @@
     transition: 400;
 }
 
-.game-description a::after {
+.htcustom-description a::after {
     content: "";
     position: absolute;
     bottom: -2px;
@@ -194,16 +194,16 @@
     transition: 400;
 }
 
-.game-description a:hover {
+.htcustom-description a:hover {
     color: #4f46e5;
 }
 
-.game-description a:hover::after {
+.htcustom-description a:hover::after {
     transform: scaleX(1);
     transform-origin: left;
 }
 
-.game-description img {
+.htcustom-description img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
@@ -212,7 +212,7 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
-.game-description blockquote {
+.htcustom-description blockquote {
     border-left: 4px solid #4f46e5;
     padding: 15px 20px;
     margin: 20px 0;
@@ -221,7 +221,7 @@
     border-radius: 0 8px 8px 0;
 }
 
-.game-description table {
+.htcustom-description table {
     width: 100%;
     border-collapse: separate;
     border-spacing: 0;
@@ -231,74 +231,74 @@
     overflow: hidden;
 }
 
-.game-description table th,
-.game-description table td {
+.htcustom-description table th,
+.htcustom-description table td {
     padding: 14px 16px;
     text-align: left;
     border-bottom: 1px solid #e5e7eb;
 }
 
-.game-description table th {
+.htcustom-description table th {
     background-color: #f1f5f9;
     font-weight: 600;
     color: #1e293b;
     border-bottom: 2px solid #e5e7eb;
 }
 
-.game-description table tr:last-child td {
+.htcustom-description table tr:last-child td {
     border-bottom: none;
 }
 
-.game-description table tr:hover {
+.htcustom-description table tr:hover {
     background-color: rgba(79, 70, 229, 0.02);
 }
 
-.game-description ol {
+.htcustom-description ol {
     list-style-type: decimal;
     padding-left: 5px;
 }
 
-.game-description ol li {
+.htcustom-description ol li {
     margin-bottom: 10px;
 }
 
-.game-description hr {
+.htcustom-description hr {
     border: none;
     height: 1px;
     background: #e5e7eb;
     margin: 30px 0;
 }
 
-.game-description pre,
-.game-description code {
+.htcustom-description pre,
+.htcustom-description code {
     background-color: #f1f5f9;
     border-radius: 6px;
     font-family: monospace;
     font-size: 16px;
 }
 
-.game-description pre {
+.htcustom-description pre {
     padding: 15px;
     overflow-x: auto;
     margin: 20px 0;
     border: 1px solid #e5e7eb;
 }
 
-.game-description code {
+.htcustom-description code {
     padding: 2px 6px;
     color: #4f46e5;
 }
 
-.game-description pre code {
+.htcustom-description pre code {
     padding: 0;
     background-color: transparent;
 }
 
-.game-description figure {
+.htcustom-description figure {
     margin: 25px 0;
 }
 
-.game-description figcaption {
+.htcustom-description figcaption {
     text-align: center;
     color: #6b7280;
     font-size: 1.3rem;
@@ -306,46 +306,46 @@
     font-style: italic;
 }
 
-.game-description sup,
-.game-description sub {
+.htcustom-description sup,
+.htcustom-description sub {
     font-size: 75%;
     line-height: 0;
 }
 
-.game-description sup {
+.htcustom-description sup {
     vertical-align: super;
 }
 
-.game-description sub {
+.htcustom-description sub {
     vertical-align: sub;
 }
 
-.game-description s,
-.game-description del {
+.htcustom-description s,
+.htcustom-description del {
     text-decoration: line-through;
     color: #6b7280;
 }
 
-.game-description mark {
+.htcustom-description mark {
     background-color: rgba(250, 204, 21, 0.4);
     padding: 2px 5px;
     border-radius: 3px;
 }
 
-.game-description abbr {
+.htcustom-description abbr {
     text-decoration: underline dotted;
     cursor: help;
 }
 
-.game-description audio,
-.game-description video {
+.htcustom-description audio,
+.htcustom-description video {
     max-width: 100%;
     border-radius: 8px;
     margin: 20px 0;
     display: block;
 }
 
-.game-description iframe {
+.htcustom-description iframe {
     max-width: 100%;
     border-radius: 8px;
     margin: 20px 0;

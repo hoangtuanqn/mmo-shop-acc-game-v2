@@ -1,5 +1,5 @@
 import React from "react";
-import HeadLine from "./HeadLine";
+import HeadLine from "./../../components/Headline";
 import { TiStar } from "react-icons/ti";
 import { formatNumber } from "../../utils/functions";
 import { Link } from "@inertiajs/react";
@@ -8,7 +8,7 @@ import { PiGameControllerBold } from "react-icons/pi";
 export default function CategoryLucky({ data }) {
     return (
         <div className="mb-20">
-            <HeadLine nameCategory={`Danh mục Vòng Quay May Mắn`} view={true} url="/" />
+            <HeadLine title={`Danh mục Vòng Quay May Mắn`} view={true} url="/" />
             <div className="grid grid-cols-2 gap-x-1.5 gap-y-6 md:grid-cols-3 md:gap-x-2.5 lg:grid-cols-4">
                 {data.map((category, key) => (
                     <Link

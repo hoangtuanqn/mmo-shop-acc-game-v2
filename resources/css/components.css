@@ -26,4 +26,7 @@
     .ht-item-achor {
         @apply text-primary ml-1 font-semibold whitespace-nowrap hover:underline;
     }
+    .ht-disabled {
+        @apply disabled:cursor-not-allowed disabled:bg-gray-100;
+    }
 }

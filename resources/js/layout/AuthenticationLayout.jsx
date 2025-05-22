@@ -42,7 +42,7 @@ export default function LayoutAuthentication({ children, title, page }) {
         <>
             <AppHead title={title} />
             <div className="mb-9">
-                <div className="grid min-h-[500px] grid-cols-2 overflow-hidden rounded-lg bg-white text-gray-700 shadow-sm sm:w-[550px] lg:min-h-[700px] lg:w-[900px]">
+                <div className="mx-auto grid min-h-[500px] grid-cols-2 overflow-hidden rounded-lg bg-white text-gray-700 shadow-sm sm:w-[550px] lg:min-h-[700px] lg:w-[900px]">
                     <div className="hidden lg:block">
                         <img
                             src="https://dl.dir.freefiremobile.com/common/web_event/official2.ff.garena.all/20252/e2db986698da6234e12f3ba3b4ffcfba.jpg"

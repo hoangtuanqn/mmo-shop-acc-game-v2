@@ -34,7 +34,7 @@ const Login = () => {
         <>
             <form className="mt-8 space-y-5" onSubmit={handleSubmit}>
                 <div>
-                    <label className="mb-1.5 block text-sm font-medium text-slate-800">Tài Khoản</label>
+                    <label className="mb-2 block text-sm font-medium text-slate-800">Tài Khoản</label>
                     <div className="relative flex items-center">
                         <input
                             name="username"
@@ -42,7 +42,7 @@ const Login = () => {
                             onChange={handleChange}
                             value={data?.username}
                             required
-                            className="outline-primary w-full rounded-md border border-slate-300 px-4 py-2.5 text-sm text-slate-800"
+                            className="outline-primary w-full rounded-md border border-slate-300 px-4 py-2.5 pr-10 text-sm text-slate-800"
                             placeholder="Tài khoản"
                         />
                         <FaUser className="ht-icon absolute right-4" />
@@ -50,7 +50,7 @@ const Login = () => {
                 </div>
 
                 <div>
-                    <label className="mb-1.5 block text-sm font-medium text-slate-800">Mật Khẩu</label>
+                    <label className="mb-2 block text-sm font-medium text-slate-800">Mật Khẩu</label>
                     <div className="relative flex items-center">
                         <input
                             name="password"
@@ -58,7 +58,7 @@ const Login = () => {
                             onChange={handleChange}
                             value={data?.password}
                             required
-                            className="outline-primary w-full rounded-md border border-slate-300 px-4 py-3 text-sm text-slate-800"
+                            className="outline-primary w-full rounded-md border border-slate-300 px-4 py-3 pr-10 text-sm text-slate-800"
                             placeholder="Mật khẩu của bạn"
                         />
                         {isShowPasssword ? (
