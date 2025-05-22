@@ -152,6 +152,7 @@ export default function OrderService() {
                         onChange={handleChange}
                         className="mt-2 h-full w-full rounded-lg border border-[#ddd] bg-white px-4 py-2 text-gray-600 duration-400"
                         placeholder="Ghi chú cho người cày thuê biết ... (nếu có)"
+                        rows={4}
                     />
                 </div>
 

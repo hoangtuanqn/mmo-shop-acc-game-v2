@@ -16,3 +16,8 @@ Route::get("/dich-vu/{slug}", function ($slug) {
         'slug' => $slug
     ]);
 })->name('service');
+Route::get("/vong-quay/{slug}", function ($slug) {
+    return Inertia::render('LuckyWheel/index', [
+        'slug' => $slug
+    ]);
+})->name('lucky');

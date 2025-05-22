@@ -4,6 +4,7 @@ import { TiStar } from "react-icons/ti";
 import { formatNumber } from "../../utils/functions";
 import { Link } from "@inertiajs/react";
 import { PiGameControllerBold } from "react-icons/pi";
+import { route } from "ziggy-js";
 
 export default function CategoryLucky({ data }) {
     return (
@@ -12,7 +13,9 @@ export default function CategoryLucky({ data }) {
             <div className="grid grid-cols-2 gap-x-1.5 gap-y-6 md:grid-cols-3 md:gap-x-2.5 lg:grid-cols-4">
                 {data.map((category, key) => (
                     <Link
-                        href="#"
+                        href={route("lucky", {
+                            slug: "123",
+                        })}
                         key={`${category.name}-${category.id}`}
                         className="relative flex flex-col overflow-hidden rounded-lg border border-[#f0f0f0] shadow-[0_10px_20px_rgba(0,0,0,0.05)] duration-200 hover:transform-[translateY(-4px)] hover:bg-[#e8f0ff] hover:shadow-[0_10px_25px_rgba(10,106,255,0.12)]"
                     >

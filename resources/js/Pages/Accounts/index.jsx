@@ -3,15 +3,15 @@ import AppHead from "../../components/AppHead";
 import Description from "../../components/Description";
 import ListAccounts from "./ListAccounts";
 import Filter from "./Filter";
+import HeadLineCenter from "../../components/HeadLineCenter";
+import LoadingAnimation from "../../components/LoadingAnimation";
 
 export default function index({ slug }) {
     return (
         <>
             <AppHead title="Danh sách acc game" />
             <div className="mb-20">
-                <h2 className="before:bg-primary text-md relative mb-6 pb-2.5 text-center font-bold uppercase before:absolute before:bottom-0 before:left-[50%] before:h-[3px] before:w-[60px] before:transform-[translate(-50%)] before:rounded-lg md:text-2xl">
-                    DANH MỤC GAME LIÊN QUÂN
-                </h2>
+                <HeadLineCenter title="DANH MỤC GAME LIÊN QUÂN" />
                 <Description>
                     <h2>Giới thiệu về trò chơi</h2>
                     <p>
@@ -26,7 +26,9 @@ export default function index({ slug }) {
                     </ul>
                 </Description>
                 <Filter />
-                <ListAccounts />
+                <LoadingAnimation>
+                    <ListAccounts />
+                </LoadingAnimation>
             </div>
         </>
     );
