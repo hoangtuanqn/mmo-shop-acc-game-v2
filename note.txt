@@ -1,0 +1,5 @@
+- unique() vì có nhiều key trùng nhau, vì nó toàn là số 1-2-3... thôi
+
+- Lưu ý các phần tử đều phải có thuộc tính id, để làm key
+- Fix lại tiêu đề
+- Add animation vào

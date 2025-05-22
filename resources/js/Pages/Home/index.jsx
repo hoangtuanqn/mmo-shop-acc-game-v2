@@ -4,15 +4,16 @@ import CategoryGame from "./CategoryGame";
 import CategoryService from "./CategoryService";
 import CategoryLucky from "./CategoryLucky";
 import Hero from "./Hero";
-import MarqueeData from "./MarqueeData";
 import ModalPopup from "../../Components/ModalPopup";
+import MarqueeData from "../../components/MarqueeData";
 import { dataCategoriesCommon, dataCategoriesGame, dataCategoriesLucky, dataCategoriesService } from "./fakerData";
+import { histories } from "./fakerData";
 
 export default function Home() {
     return (
         <>
             <Hero />
-            <MarqueeData />
+            <MarqueeData histories={histories} />
 
             {/* Hiển thị tất cả các thể loại game */}
             <CategoryCommon data={dataCategoriesCommon} />

@@ -73,7 +73,7 @@ export default function Filter() {
                     </button>
                     <Link
                         href=""
-                        className="ht-button flex basis-1/2 items-center justify-center gap-1 border border-[#ddd] px-2 text-xs text-gray-600 xl:px-8 xl:text-sm"
+                        className="ht-button-transparent flex basis-1/2 items-center justify-center gap-1 px-2 text-xs xl:px-8 xl:text-sm"
                     >
                         <RxReset />
                         Đặt lại

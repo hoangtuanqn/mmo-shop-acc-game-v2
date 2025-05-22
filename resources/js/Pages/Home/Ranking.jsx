@@ -30,7 +30,10 @@ export default function Ranking() {
                                 />
                                 <span className="font-bold text-gray-800">{item.name}</span>
                             </div>
-                            <span className="text-primary font-bold">{formatNumber(item.total)}</span>
+                            {/* <span className="font-bold text-primary">{formatNumber(item.total)}</span> */}
+                            <span className="rounded-sm bg-red-500 px-5 py-1 text-xs font-semibold text-white xl:text-sm">
+                                {formatNumber(item.total)}đ
+                            </span>
                         </div>
                     ))
                 ) : (
