@@ -3,7 +3,7 @@ import { Link } from "@inertiajs/react";
 import { route } from "ziggy-js";
 
 export default function Gift() {
-    const [isShow] = useState(true);
+    const [isShow] = useState(false);
 
     return (
         <>

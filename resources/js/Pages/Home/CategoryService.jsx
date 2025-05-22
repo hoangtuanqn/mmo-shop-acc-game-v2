@@ -27,7 +27,7 @@ export default function CategoryService({ nameCategory, data }) {
                             className="aspect-video w-full object-cover transition-all duration-200"
                             alt={category.name}
                         />
-                        <div className="ht-flex-center flex-col gap-3 bg-white px-2 py-3 text-xs md:mt-0 md:p-5 md:text-sm">
+                        <div className="ht-flex-center h-full flex-col gap-3 bg-white px-2 py-3 text-xs md:mt-0 md:p-5 md:text-sm">
                             <h2 className="text-center text-sm font-bold md:line-clamp-1 md:text-lg md:hover:line-clamp-none">
                                 {category.name}
                             </h2>

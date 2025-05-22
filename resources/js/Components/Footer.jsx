@@ -2,6 +2,7 @@ import React from "react";
 import { FaDiscord, FaFacebookF, FaTelegramPlane, FaTiktok, FaYoutube } from "react-icons/fa";
 import { LuChevronRight } from "react-icons/lu";
 import Gift from "./Gift";
+import { Link } from "@inertiajs/react";
 const IconSocial = ({ children, url = "#" }) => {
     return (
         <a
@@ -181,13 +182,13 @@ export default function Footer() {
                             </ul>
                         </div>
                     </div>
-                    <address className="mt-6 text-center text-white">
+                    <address className="mt-6 text-center leading-7 text-white">
                         &copy; 2025 - Bản quyền thuộc về{" "}
-                        <a href="#" className="text-pink-second">
+                        <Link href="/" className="text-pink-second">
                             LOCALHOST
-                        </a>{" "}
+                        </Link>{" "}
                         - Thiết kế bởi{" "}
-                        <a href="#" className="text-pink-second">
+                        <a href="https://tuanori.vn/" className="text-pink-second">
                             TUANORI.VN
                         </a>
                     </address>

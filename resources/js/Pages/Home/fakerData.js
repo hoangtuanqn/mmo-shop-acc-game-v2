@@ -7,7 +7,7 @@ export const dataCategoriesCommon = [
     {
         id: 2,
         name: "PUBG Mobile",
-        image: "https://play-lh.googleusercontent.com/E_bwpvmFEiRGW4G9VnTIpoJ4XM-3udz3Jm2cDBVsavyu4pT12x2hNLI1ucWoS2KaQIoA",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4KChtUlCkYBJU451pxFocL4vnPGiYvDa-sA&s",
     },
     {
         id: 3,

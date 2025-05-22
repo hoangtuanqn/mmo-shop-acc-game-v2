@@ -5,7 +5,7 @@ export default function Category({ data }) {
     return (
         <div className="mb-20">
             <HeadLine nameCategory={"Danh mục game phổ biến"} />
-            <div className="grid grid-cols-2 gap-x-4 gap-y-6 sm:grid-cols-3 lg:grid-cols-5">
+            <div className="grid grid-cols-2 gap-x-2 gap-y-4 sm:grid-cols-3 lg:grid-cols-5">
                 {data.map((item) => (
                     <div
                         key={`${item.name}-${item.id}`}
@@ -16,7 +16,7 @@ export default function Category({ data }) {
                             alt={item.name}
                             className="mb-2 aspect-square w-[55px] rounded-full bg-white p-[5px]"
                         />
-                        <span className="text-sm font-medium text-center text-primary">{item.name}</span>
+                        <span className="text-primary text-center text-sm font-medium">{item.name}</span>
                     </div>
                 ))}
             </div>
