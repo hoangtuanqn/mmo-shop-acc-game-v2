@@ -4,3 +4,5 @@
 - Fix lại tiêu đề
 - Add animation vào
 - Bật chức năng nhận quà ngay footer
+
+- Thêm thông báo từng thể loại danh mục. VD: https://shopbacgau.com/minigame-lat-the-san-robux
