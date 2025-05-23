@@ -35,7 +35,7 @@ const Login = () => {
         <>
             <form className="mt-8 space-y-5" onSubmit={handleSubmit}>
                 <div>
-                    <label className="mb-2 block text-sm font-medium text-slate-800">Tài Khoản</label>
+                    <label className="block mb-2 text-sm font-medium text-slate-800">Tài Khoản</label>
                     <div className="relative flex items-center">
                         <input
                             name="username"
@@ -46,12 +46,12 @@ const Login = () => {
                             className="outline-primary w-full rounded-md border border-slate-300 px-4 py-2.5 pr-10 text-sm text-slate-800"
                             placeholder="Tài khoản"
                         />
-                        <FaUser className="ht-icon absolute right-4" />
+                        <FaUser className="absolute ht-icon right-4" />
                     </div>
                 </div>
 
                 <div>
-                    <label className="mb-2 block text-sm font-medium text-slate-800">Mật Khẩu</label>
+                    <label className="block mb-2 text-sm font-medium text-slate-800">Mật Khẩu</label>
                     <div className="relative flex items-center">
                         <input
                             name="password"
@@ -59,20 +59,20 @@ const Login = () => {
                             onChange={handleChange}
                             value={data?.password}
                             required
-                            className="outline-primary w-full rounded-md border border-slate-300 px-4 py-3 pr-10 text-sm text-slate-800"
+                            className="w-full px-4 py-3 pr-10 text-sm border rounded-md outline-primary border-slate-300 text-slate-800"
                             placeholder="Mật khẩu của bạn"
                         />
                         {isShowPasssword ? (
                             <BsEyeSlashFill
-                                className="ht-icon absolute right-4 cursor-pointer"
+                                className="absolute cursor-pointer ht-icon right-4"
                                 onClick={handleShowPassword}
                             />
                         ) : (
-                            <HiEye className="ht-icon absolute right-4 cursor-pointer" onClick={handleShowPassword} />
+                            <HiEye className="absolute cursor-pointer ht-icon right-4" onClick={handleShowPassword} />
                         )}
                     </div>
                 </div>
-                <div className="mt-5 flex flex-wrap items-center justify-end gap-4">
+                <div className="flex flex-wrap items-center justify-end gap-4 mt-5">
                     <div className="text-sm">
                         <Link href={route("auth.forgot-password")} className="ht-item-achor">
                             Bạn Quên Mật Khẩu?
