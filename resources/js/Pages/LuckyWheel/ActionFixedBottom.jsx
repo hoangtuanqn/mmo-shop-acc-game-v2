@@ -1,14 +1,13 @@
 import React, { memo } from "react";
 
 function ActionFixedBottom({ action: handlePlay }) {
-    console.log("render");
 
     return (
-        <div className="ht-flex-center fixed right-0 bottom-0 left-0 z-200 hidden gap-2 bg-white p-4 max-md:flex">
-            <button className="ht-button-color-primary flex-1" onClick={() => handlePlay("real")}>
+        <div className="fixed bottom-0 left-0 right-0 hidden gap-2 p-4 bg-white ht-flex-center z-200 max-md:flex">
+            <button className="flex-1 ht-button-color-primary" onClick={() => handlePlay("real")}>
                 Chơi thật
             </button>
-            <button className="ht-button-transparent flex-1" onClick={() => handlePlay("trial")}>
+            <button className="flex-1 ht-button-transparent" onClick={() => handlePlay("trial")}>
                 Chơi thử
             </button>
         </div>

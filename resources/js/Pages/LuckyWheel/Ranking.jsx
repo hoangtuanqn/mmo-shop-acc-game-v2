@@ -11,8 +11,8 @@ export default function Ranking() {
     const listNav = ["Hôm nay", "7 Ngày", "Quà đua top"];
     const ok = [];
     return (
-        <div className="mt-3 mb-6">
-            <h3 className="flex items-center text-xl font-bold">
+        <div className="mt-3 mb-4">
+            <h3 className="flex items-center py-2 text-xl font-bold">
                 <FaMedal className="mr-2 text-yellow-400" />
                 <span>Top quay thưởng</span>
             </h3>

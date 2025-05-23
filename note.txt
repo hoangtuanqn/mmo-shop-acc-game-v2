@@ -3,3 +3,4 @@
 - Lưu ý các phần tử đều phải có thuộc tính id, để làm key
 - Fix lại tiêu đề
 - Add animation vào
+- Bật chức năng nhận quà ngay footer
