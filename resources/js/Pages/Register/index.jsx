@@ -6,6 +6,7 @@ import { HiEye } from "react-icons/hi";
 import { showAlert } from "../../utils/functions";
 import { BsEyeSlashFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
+import Button from "../../components/Form/Button";
 
 const Register = () => {
     const [data, setData] = useState({
@@ -24,8 +25,6 @@ const Register = () => {
         e.preventDefault();
 
         showAlert("success", "Tạo tài khoản thành công!");
-
-        // console.log("submit thành công");
     };
     const handleShowPassword = () => {
         setIsShowPasssword((is) => !is);
@@ -87,37 +86,10 @@ const Register = () => {
                     </div>
                 </div>
 
-                <div>
-                    <label className="mb-1.5 block text-sm font-medium text-slate-800">Mật khẩu</label>
-                    <div className="relative flex items-center">
-                        <input
-                            name="password"
-                            type={isShowPasssword ? "text" : "password"}
-                            onChange={handleChange}
-                            value={data?.password}
-                            required
-                            className="outline-primary w-full rounded-md border border-slate-300 px-4 py-3 text-sm text-slate-800"
-                            placeholder="Mật khẩu của bạn"
-                        />
-                        {isShowPasssword ? (
-                            <BsEyeSlashFill
-                                className="ht-icon absolute right-4 cursor-pointer"
-                                onClick={handleShowPassword}
-                            />
-                        ) : (
-                            <HiEye className="ht-icon absolute right-4 cursor-pointer" onClick={handleShowPassword} />
-                        )}
-                    </div>
-                </div>
-
-                <div className="mt-5 flex flex-wrap items-center justify-end gap-4">
-                    <div className="text-sm"></div>
-                </div>
-
                 <div className="mt-6">
-                    <button type="submit" className="ht-button-color-primary w-full">
+                    <Button type="submit" className="w-full">
                         Tạo Tài Khoản
-                    </button>
+                    </Button>
                 </div>
             </form>
         </>

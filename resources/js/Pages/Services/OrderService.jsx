@@ -5,6 +5,7 @@ import { MdPayments } from "react-icons/md";
 import { formatNumber, showAlert } from "../../utils/functions";
 import { BsEyeSlashFill } from "react-icons/bs";
 import { HiEye } from "react-icons/hi";
+import Button from "../../components/Form/Button";
 
 export default function OrderService() {
     const [isShowPasssword, setIsShowPasssword] = useState(false);
@@ -39,9 +40,9 @@ export default function OrderService() {
     };
 
     return (
-        <div className="rounded-lg bg-white p-6 shadow-sm">
+        <div className="p-6 bg-white rounded-lg shadow-sm">
             <HeadLine title={"Thông tin đặt dịch vụ"} customHeading="md:text-xl" />
-            <form action="" className="flex w-full flex-col gap-4 md:gap-8" onSubmit={handleSubmit}>
+            <form action="" className="flex flex-col w-full gap-4 md:gap-6" onSubmit={handleSubmit}>
                 <div className="flex flex-col">
                     <label htmlFor="package_id" className="font-medium text-gray-600">
                         Dịch vụ
@@ -51,6 +52,7 @@ export default function OrderService() {
                         id="package_id"
                         onChange={handleChange}
                         className="mt-2 w-full rounded-lg border border-[#ddd] bg-white px-4 py-2 text-gray-600 duration-400"
+                        required
                     >
                         {dataServices.map((item) => (
                             <option key={`${item.service}-${item.id}`} value={item.id}>
@@ -60,8 +62,8 @@ export default function OrderService() {
                     </select>
                 </div>
 
-                <div className="flex w-full flex-col justify-between gap-4 md:flex-row">
-                    <div className="flex flex-1 flex-col">
+                <div className="flex flex-col justify-between w-full gap-4 md:flex-row">
+                    <div className="flex flex-col flex-1">
                         <label htmlFor="game_account" className="font-medium text-gray-600">
                             Tài Khoản
                         </label>
@@ -72,9 +74,10 @@ export default function OrderService() {
                             onChange={handleChange}
                             className="mt-2 h-full w-full rounded-lg border border-[#ddd] bg-white px-4 py-2 text-gray-600 duration-400"
                             placeholder="Tài khoản game của bạn"
+                            required
                         />
                     </div>
-                    <div className="flex flex-1 flex-col">
+                    <div className="flex flex-col flex-1">
                         <label htmlFor="game_password" className="font-medium text-gray-600">
                             Mật Khẩu
                         </label>
@@ -86,6 +89,7 @@ export default function OrderService() {
                                 onChange={handleChange}
                                 className="mt-2 h-full w-full rounded-lg border border-[#ddd] bg-white px-4 py-2 pr-10 text-gray-600 duration-400"
                                 placeholder="Mật khẩu game của bạn"
+                                required
                             />
                             {isShowPasssword ? (
                                 <BsEyeSlashFill
@@ -100,7 +104,7 @@ export default function OrderService() {
                             )}
                         </div>
                     </div>
-                    <div className="flex flex-1 flex-col">
+                    <div className="flex flex-col flex-1">
                         <label htmlFor="info_required" className="font-medium text-gray-600">
                             Thông tin cần thiết
                         </label>
@@ -111,12 +115,13 @@ export default function OrderService() {
                             onChange={handleChange}
                             className="mt-2 h-full w-full rounded-lg border border-[#ddd] bg-white px-4 py-2 text-gray-600 duration-400"
                             placeholder="Link game pass, máy chủ hoặc thông tin cần thiết, ..."
+                            required
                         />
                     </div>
                 </div>
 
-                <div className="flex w-full flex-col justify-between gap-4 md:flex-row">
-                    <div className="flex flex-1 flex-col">
+                <div className="flex flex-col justify-between w-full gap-4 md:flex-row">
+                    <div className="flex flex-col flex-1">
                         <label className="font-medium text-gray-600">Tổng tiền</label>
                         <input
                             type="text"
@@ -124,9 +129,10 @@ export default function OrderService() {
                             className="ht-disabled mt-2 h-full w-full rounded-lg border border-[#ddd] px-4 py-2 text-gray-600 duration-400"
                             disabled
                             placeholder="Tổng tiền phải thanh toán"
+                            required
                         />
                     </div>
-                    <div className="flex flex-1 flex-col">
+                    <div className="flex flex-col flex-1">
                         <label htmlFor="giftcode" className="font-medium text-gray-600">
                             Mã giảm giá (Nếu có)
                         </label>
@@ -141,7 +147,7 @@ export default function OrderService() {
                     </div>
                 </div>
 
-                <div className="flex flex-1 flex-col">
+                <div className="flex flex-col flex-1">
                     <label htmlFor="note" className="font-medium text-gray-600">
                         Ghi chú
                     </label>
@@ -156,9 +162,9 @@ export default function OrderService() {
                     />
                 </div>
 
-                <button className="ht-button-color-primary flex w-full items-center justify-center gap-1 px-2 text-xs xl:px-8 xl:text-sm">
+                <Button type="submit" className="w-full">
                     <MdPayments /> Thanh toán
-                </button>
+                </Button>
             </form>
         </div>
     );

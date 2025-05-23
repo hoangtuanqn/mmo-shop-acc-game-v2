@@ -7,6 +7,7 @@ import AuthenticationLayout from "../../layout/AuthenticationLayout";
 import MasterLayout from "../../layout/MasterLayout";
 import { Link } from "@inertiajs/react";
 import { route } from "ziggy-js";
+import Button from "../../components/Form/Button";
 
 const Login = () => {
     const [data, setData] = useState({
@@ -80,9 +81,9 @@ const Login = () => {
                 </div>
 
                 <div className="mt-6">
-                    <button type="submit" className="ht-button-color-primary w-full">
+                    <Button type="submit" className="w-full">
                         Đăng Nhập
-                    </button>
+                    </Button>
                 </div>
             </form>
         </>

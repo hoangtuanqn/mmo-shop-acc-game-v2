@@ -12,7 +12,10 @@ export default function DisplayTopUpRewards({ topUpRewards }) {
             ) : (
                 <ul className="pt-4">
                     {topUpRewards.map((item, key) => (
-                        <li className="rounded-sm px-2 py-2 even:bg-[#F8F8FC]" key={`${item.balance}-${item.id}`}>
+                        <li
+                            className="rounded-sm px-2 py-2 duration-200 even:bg-[#F8F8FC] hover:scale-105"
+                            key={`${item.balance}-${item.id}`}
+                        >
                             <div className="flex items-center justify-between">
                                 <span className="font-bold">
                                     Top <span className="text-red-600">{key + 1}</span> nhận

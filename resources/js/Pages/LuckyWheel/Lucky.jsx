@@ -2,8 +2,14 @@ import React, { useCallback, useState } from "react";
 import MarqueeData from "../../components/MarqueeData";
 import Ranking from "./Ranking";
 import ActionFixedBottom from "./ActionFixedBottom";
+import Input from "../../components/Form/Input";
+import Select from "../../components/Form/Select";
+import ButtonButton from "../../components/Form/Button";
+import { ImHistory } from "react-icons/im";
+import { BiMoneyWithdraw } from "react-icons/bi";
 import { formatNumber, random, showAlert } from "../../utils/functions";
 import { winningSlot, messageWinning, historiesWheel } from "./fakerData";
+import Button from "../../components/Form/Button";
 export default function Lucky({ price = 9000 }) {
     const [deg, setDeg] = useState(0);
     const [isSpinning, setIsSpinning] = useState(false);
@@ -48,11 +54,11 @@ export default function Lucky({ price = 9000 }) {
     const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
     return (
         <>
-            <ActionFixedBottom action={handlePlay} />
+            <ActionFixedBottom action={handlePlay} isPending={isSpinning} />
             <section className="mb-20 rounded-xl">
                 <MarqueeData histories={historiesWheel} custom="hidden lg:flex" />
-                <div className="flex flex-col gap-2 lg:flex-row">
-                    <section className="h-full basis-2/3 overflow-hidden rounded-xl border border-gray-500">
+                <div className="flex flex-col items-start gap-2 lg:flex-row">
+                    <section className="basis-2/3 overflow-hidden rounded-xl border border-gray-500">
                         <div className="bg-linear-60 from-blue-500 to-purple-500 p-4">
                             <h2 className="text-center text-base font-bold text-white lg:text-2xl">
                                 Lật thẻ săn kim cương
@@ -60,11 +66,11 @@ export default function Lucky({ price = 9000 }) {
                         </div>
                         <div className="flex flex-col items-center justify-center bg-white p-4 py-8">
                             <div className="flex items-center justify-center">
-                                <div className="relative flex aspect-square w-[100%] min-w-[550px] lg:w-[70%]">
+                                <div className="relative flex aspect-square w-[100%] md:min-w-[550px] lg:w-[70%]">
                                     <img
                                         // src="https://s3-hcm-r1.s3cloud.vn/mandan/imgsv3_ZM9w1h8sNHIO4Kc.png"
                                         // src="https://s3-hcm-r1.s3cloud.vn/mandan/imgsv3_VDc2SUjRHx2Rb90.png"
-                                        src="https://i.imgur.com/D1BD4Vn.png"
+                                        src="/images/faker/wheel-1.png"
                                         alt=""
                                         onTransitionEnd={handleTransitionEnd}
                                         style={{
@@ -98,54 +104,43 @@ export default function Lucky({ price = 9000 }) {
                                             <label htmlFor="sort-order" className="font-medium text-gray-600">
                                                 Mua lần quay
                                             </label>
-                                            <select
-                                                name="spinCount"
-                                                id="spinCount"
-                                                onChange={handleChange}
-                                                className="mt-2 w-full rounded-lg border border-[#ddd] bg-white px-4 py-2 text-gray-600 duration-400"
-                                            >
-                                                {[1, 3, 5, 7, 10].map((index) => {
-                                                    return (
-                                                        <option key={index * price} value={index}>
-                                                            Mua X{index} / {formatNumber(index * price)}đ
-                                                        </option>
-                                                    );
-                                                })}
-                                            </select>
+                                            <Select name="spinCount" id="spinCount" onChange={handleChange}>
+                                                {[1, 3, 5, 7, 10].map((index) => (
+                                                    <option key={index * price} value={index}>
+                                                        Mua X{index} / {formatNumber(index * price)}đ
+                                                    </option>
+                                                ))}
+                                            </Select>
                                         </div>
 
                                         <div className="flex flex-1 flex-col">
                                             <label htmlFor="code" className="font-medium text-gray-600">
                                                 Mã giảm giá
                                             </label>
-                                            <input
+                                            <Input
                                                 type="text"
                                                 id="giftcode"
                                                 name="giftcode"
                                                 value={form.giftcode}
                                                 onChange={handleChange}
-                                                className="mt-2 h-full w-full rounded-lg border border-[#ddd] bg-white px-4 py-2 text-gray-600 duration-400"
                                                 placeholder="Mã giảm giá (Nếu có)"
                                             />
                                         </div>
                                     </div>
                                     <div className="flex w-full gap-2">
-                                        <button
-                                            className="ht-button-color-primary ht-flex-center flex-1 flex-row"
-                                            onClick={() => handlePlay("real")}
-                                            disabled
-                                        >
+                                        <ButtonButton onClick={() => handlePlay("real")} disabled={isSpinning}>
                                             <span>Quay luôn </span>
                                             <span className="hidden lg:block">
                                                 - {formatNumber(form.spinCount * price)}đ x {form.spinCount} lượt
                                             </span>
-                                        </button>
-                                        <button
-                                            className="ht-button-transparent flex-1"
+                                        </ButtonButton>
+                                        <Button
+                                            mode="transparent"
                                             onClick={() => handlePlay("trial")}
+                                            disabled={isSpinning}
                                         >
                                             Chơi thử
-                                        </button>
+                                        </Button>
                                     </div>
                                 </form>
                             </div>
@@ -153,21 +148,15 @@ export default function Lucky({ price = 9000 }) {
                     </section>
                     <section className="basis-1/3 rounded-xl border border-gray-500 px-4">
                         <div className="flex gap-2 border-b border-gray-600 py-4">
-                            <a href="#" className="ht-button-transparent flex-1">
-                                Lịch Sử Quay
-                            </a>
-                            <a href="#" className="ht-button-color-primary flex-1">
+                            <Button mode="transparent" Element="Link" href="/">
+                                <ImHistory /> Lịch Sử Quay
+                            </Button>
+                            <ButtonButton>
+                                <BiMoneyWithdraw />
                                 Rút thưởng
-                            </a>
+                            </ButtonButton>
                         </div>
-                        {/* <div className="hidden gap-2 pb-4 mb-2 border-gray-600 pb-4border-b md:flex">
-                            <button
-                                onClick={() => handlePlay("trial")}
-                                className="flex-1 duration-200 ht-button-color-primary from-pink-second to-primary hover:to-pink-second hover:from-primary bg-linear-145"
-                            >
-                                Chơi thử
-                            </button>
-                        </div> */}
+
                         <Ranking />
                     </section>
                 </div>

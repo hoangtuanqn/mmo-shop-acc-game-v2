@@ -3,6 +3,7 @@ import { FaCubes, FaShoppingCart } from "react-icons/fa";
 import { formatNumber } from "../../utils/functions";
 import { Link } from "@inertiajs/react";
 import { IoIosPricetags } from "react-icons/io";
+import Button from "../../components/Form/Button";
 
 export default function ListAccounts() {
     return (
@@ -53,9 +54,7 @@ export default function ListAccounts() {
                                 <span className="text-pink-second pl-1 font-bold">2.000.000đ</span>
                             </span>
                         </div>
-                        <button className="ht-button-color-primary w-full rounded-lg p-1.5 text-center font-medium text-white md:p-3">
-                            Chi tiết
-                        </button>
+                        <Button className="w-full">Chi tiết</Button>
                     </div>
                 </Link>
             ))}

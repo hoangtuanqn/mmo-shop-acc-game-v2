@@ -3,6 +3,7 @@ import { Link, usePage } from "@inertiajs/react";
 import clsx from "clsx";
 import { FaHome, FaCoins, FaHistory, FaMoneyBillWave, FaNewspaper, FaUser, FaRegUser } from "react-icons/fa";
 import { route } from "ziggy-js";
+import Button from "./Form/Button";
 
 export default function Header() {
     const { url } = usePage();
@@ -41,16 +42,20 @@ export default function Header() {
                 <div className="hidden gap-2 xl:flex">
                     <Link
                         href={route("auth.login")}
-                        className="rounded-lg border-blue-500 px-5 py-2 text-center font-semibold text-blue-500 transition hover:bg-blue-50"
+                        className="rounded-lg border border-blue-500 px-5 py-2 text-center font-semibold text-blue-500 transition hover:bg-blue-50"
                     >
                         Đăng nhập
                     </Link>
-                    <Link
+
+                    <Button href={route("auth.register")} Element="Link">
+                        Đăng ký
+                    </Button>
+                    {/* <Link
                         href={route("auth.register")}
-                        className="from-primary rounded-lg bg-gradient-to-r to-blue-500 px-8 py-2 text-center font-semibold text-white shadow transition hover:from-blue-600 hover:to-indigo-600"
+                        className="px-8 py-2 font-semibold text-center text-white transition rounded-lg shadow from-primary bg-gradient-to-r to-blue-500 hover:from-blue-600 hover:to-indigo-600"
                     >
                         Đăng ký
-                    </Link>
+                    </Link> */}
                 </div>
 
                 {/* Mobile Hamburger & User */}

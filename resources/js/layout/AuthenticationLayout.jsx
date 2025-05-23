@@ -44,11 +44,7 @@ export default function LayoutAuthentication({ children, title, page }) {
             <div className="mb-9">
                 <div className="mx-auto grid min-h-[500px] grid-cols-2 overflow-hidden rounded-lg bg-white text-gray-700 shadow-sm sm:w-[550px] lg:min-h-[700px] lg:w-[900px]">
                     <div className="hidden lg:block">
-                        <img
-                            src="https://dl.dir.freefiremobile.com/common/web_event/official2.ff.garena.all/20252/e2db986698da6234e12f3ba3b4ffcfba.jpg"
-                            alt=""
-                            className="h-full w-full object-cover"
-                        />
+                        <img src="/images/faker/bg-authen.jpg" alt="" className="h-full w-full object-cover" />
                     </div>
                     <div className="col-span-2 flex flex-col items-center justify-center px-8 py-16 lg:col-span-1">
                         <div className="w-full max-w-md">

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FaBell, FaHandPointLeft, FaHandPointRight } from "react-icons/fa";
+import Button from "./Form/Button";
 export default function ModalPopup() {
     const [status, setStatus] = useState(true);
     const handleClose = (e) => {
@@ -46,15 +47,12 @@ export default function ModalPopup() {
                                 Chúc bạn có những giây phút thư giãn và thú vị!
                             </p>
                         </div>
-                        <div className="border-t border-gray-200 close_popup ht-flex-center ht-button">
-                            <button
-                                name="close"
-                                className="mt-6 text-white ht-button-color-primary ht-flex-center gap-x-2"
-                            >
+                        <div className="flex-col border-t border-gray-200 close_popup ht-flex-center">
+                            <Button className="mt-4" name="close">
                                 <FaHandPointRight />
                                 Xong
                                 <FaHandPointLeft />
-                            </button>
+                            </Button>
                         </div>
                     </div>
                 </div>
