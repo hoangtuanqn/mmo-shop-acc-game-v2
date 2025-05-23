@@ -3,6 +3,7 @@ import { showAlert } from "../../utils/functions";
 import AuthenticationLayout from "../../layout/AuthenticationLayout";
 import MasterLayout from "../../layout/MasterLayout";
 import { MdEmail } from "react-icons/md";
+import Button from "../../components/Form/Button";
 const ForgotPassword = () => {
     const [email, setEmail] = useState("");
 
@@ -14,7 +15,7 @@ const ForgotPassword = () => {
         <>
             <form className="mt-8 space-y-5" onSubmit={handleSubmit}>
                 <div>
-                    <label className="mb-2 block text-sm font-medium text-slate-800">Địa Chỉ Email</label>
+                    <label className="block mb-2 text-sm font-medium text-slate-800">Địa Chỉ Email</label>
                     <div className="relative flex items-center">
                         <input
                             name="email"
@@ -25,18 +26,14 @@ const ForgotPassword = () => {
                             className="outline-primary w-full rounded-md border border-slate-300 px-4 py-2.5 pr-10 text-sm text-slate-800"
                             placeholder="Nhập Địa Chỉ Email"
                         />
-                        <MdEmail className="ht-icon absolute right-4 max-sm:hidden" />
+                        <MdEmail className="absolute ht-icon right-4 max-sm:hidden" />
                     </div>
                 </div>
 
-                <div className="mt-5 flex flex-wrap items-center justify-end gap-4">
-                    <div className="text-sm"></div>
-                </div>
-
                 <div className="mt-6">
-                    <button type="submit" className="ht-button-color-primary w-full">
+                    <Button type="submit" className="w-full">
                         Đặt Lại Mật Khẩu
-                    </button>
+                    </Button>
                 </div>
             </form>
         </>

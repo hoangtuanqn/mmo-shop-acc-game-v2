@@ -5,6 +5,8 @@ import MasterLayout from "../../layout/MasterLayout";
 import { MdEmail } from "react-icons/md";
 import { HiEye } from "react-icons/hi";
 import { BsEyeSlashFill } from "react-icons/bs";
+import Button from "../../components/Form/Button";
+import Input from "../../components/Form/Input";
 const ConfirmResetPassword = ({ email }) => {
     const [data, setData] = useState({
         password: "",
@@ -32,9 +34,9 @@ const ConfirmResetPassword = ({ email }) => {
         <>
             <form className="mt-8 space-y-5" onSubmit={handleSubmit}>
                 <div>
-                    <label className="mb-2 block text-sm font-medium text-slate-800">Địa Chỉ Email</label>
+                    <label className="block mb-2 text-sm font-medium text-slate-800">Địa Chỉ Email</label>
                     <div className="relative flex items-center">
-                        <input
+                        <Input
                             type="email"
                             value={email}
                             required
@@ -42,11 +44,12 @@ const ConfirmResetPassword = ({ email }) => {
                             placeholder="Địa Chỉ Email"
                             disabled
                         />
-                        <MdEmail className="ht-icon absolute right-4 max-sm:hidden" />
+
+                        <MdEmail className="absolute ht-icon right-4 max-sm:hidden" />
                     </div>
                 </div>
                 <div>
-                    <label className="mb-2 block text-sm font-medium text-slate-800">Nhập Mật Khẩu Mới</label>
+                    <label className="block mb-2 text-sm font-medium text-slate-800">Nhập Mật Khẩu Mới</label>
                     <div className="relative flex items-center">
                         <input
                             name="password"
@@ -54,21 +57,21 @@ const ConfirmResetPassword = ({ email }) => {
                             onChange={handleChange}
                             value={data?.password}
                             required
-                            className="outline-primary w-full rounded-md border border-slate-300 px-4 py-3 pr-10 text-sm text-slate-800"
+                            className="w-full px-4 py-3 pr-10 text-sm border rounded-md outline-primary border-slate-300 text-slate-800"
                             placeholder="Mật khẩu mới của bạn"
                         />
                         {isShowPasssword ? (
                             <BsEyeSlashFill
-                                className="ht-icon absolute right-4 cursor-pointer"
+                                className="absolute cursor-pointer ht-icon right-4"
                                 onClick={handleShowPassword}
                             />
                         ) : (
-                            <HiEye className="ht-icon absolute right-4 cursor-pointer" onClick={handleShowPassword} />
+                            <HiEye className="absolute cursor-pointer ht-icon right-4" onClick={handleShowPassword} />
                         )}
                     </div>
                 </div>{" "}
                 <div>
-                    <label className="mb-2 block text-sm font-medium text-slate-800">Nhập Lại Mật khẩu</label>
+                    <label className="block mb-2 text-sm font-medium text-slate-800">Nhập Lại Mật khẩu</label>
                     <div className="relative flex items-center">
                         <input
                             name="password_confirmation"
@@ -76,26 +79,23 @@ const ConfirmResetPassword = ({ email }) => {
                             onChange={handleChange}
                             value={data?.password_confirmation}
                             required
-                            className="outline-primary pr-10pr-10 w-full rounded-md border border-slate-300 px-4 py-3 text-sm text-slate-800"
+                            className="w-full px-4 py-3 text-sm border rounded-md outline-primary pr-10pr-10 border-slate-300 text-slate-800"
                             placeholder="Nhập lại mật khẩu"
                         />
                         {isShowPasssword ? (
                             <BsEyeSlashFill
-                                className="ht-icon absolute right-4 cursor-pointer"
+                                className="absolute cursor-pointer ht-icon right-4"
                                 onClick={handleShowPassword}
                             />
                         ) : (
-                            <HiEye className="ht-icon absolute right-4 cursor-pointer" onClick={handleShowPassword} />
+                            <HiEye className="absolute cursor-pointer ht-icon right-4" onClick={handleShowPassword} />
                         )}
                     </div>
                 </div>
-                <div className="mt-5 flex flex-wrap items-center justify-end gap-4">
-                    <div className="text-sm"></div>
-                </div>
                 <div className="mt-6">
-                    <button type="submit" className="ht-button-color-primary w-full">
+                    <Button type="submit" className="w-full">
                         Xác Nhận
-                    </button>
+                    </Button>
                 </div>
             </form>
         </>

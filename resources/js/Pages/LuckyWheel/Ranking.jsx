@@ -22,7 +22,7 @@ export default function Ranking() {
                         key={item}
                         onClick={() => setActiveNav(key + 1)}
                         className={clsx("cursor-pointer", {
-                            "ht-button-color-primary px-2 py-2 text-xs": activeNav === key + 1,
+                            "ht-style-color-primary px-2 py-2": activeNav === key + 1,
                         })}
                     >
                         {item}

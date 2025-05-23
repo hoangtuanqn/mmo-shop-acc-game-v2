@@ -4,6 +4,7 @@ import { rankinger } from "./fakerData";
 import { formatNumber } from "../../utils/functions";
 import { Link } from "@inertiajs/react";
 import { FaRegHandshake } from "react-icons/fa";
+import Button from "../../components/Form/Button";
 
 export default function Ranking() {
     return (
@@ -39,11 +40,11 @@ export default function Ranking() {
                 ) : (
                     <>
                         <h1 className="mb-6 text-center text-base font-bold">Chưa có dữ liệu</h1>
-                        <Link className="ht-flex-center ht-button-color-primary gap-1">
+                        <Button href="/" Element="Link">
                             <FaRegHandshake className="ht-icon text-white" />
                             <span> Nạp ngay</span>
                             <FaRegHandshake className="ht-icon text-white" />
-                        </Link>
+                        </Button>
                     </>
                 )}
             </div>

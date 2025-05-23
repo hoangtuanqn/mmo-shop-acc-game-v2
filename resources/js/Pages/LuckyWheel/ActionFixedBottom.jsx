@@ -1,15 +1,15 @@
 import React, { memo } from "react";
+import Button from "../../components/Form/Button";
 
-function ActionFixedBottom({ action: handlePlay }) {
-
+function ActionFixedBottom({ action: handlePlay, isPending }) {
     return (
-        <div className="fixed bottom-0 left-0 right-0 hidden gap-2 p-4 bg-white ht-flex-center z-200 max-md:flex">
-            <button className="flex-1 ht-button-color-primary" onClick={() => handlePlay("real")}>
+        <div className="ht-flex-center fixed right-0 bottom-0 left-0 z-200 hidden gap-2 bg-white p-4 max-md:flex">
+            <Button onClick={() => handlePlay("real")} disabled={isPending}>
                 Chơi thật
-            </button>
-            <button className="flex-1 ht-button-transparent" onClick={() => handlePlay("trial")}>
+            </Button>
+            <Button onClick={() => handlePlay("trial")} mode="transparent" disabled={isPending}>
                 Chơi thử
-            </button>
+            </Button>
         </div>
     );
 }

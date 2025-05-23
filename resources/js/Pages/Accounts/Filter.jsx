@@ -1,23 +1,27 @@
-import { Link } from "@inertiajs/react";
 import React, { useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import { RxReset } from "react-icons/rx";
+import Input from "../../components/Form/Input";
+import Select from "../../components/Form/Select";
+import Button from "../../components/Form/Button";
 
 export default function Filter() {
-    const [data, setData] = useState({
+    const [form, setForm] = useState({
         "price-range": "",
         "sort-order": "",
         code: "",
     });
     const handleChange = (e) => {
-        setData({
-            ...data,
+        setForm({
+            ...form,
             [e.target.name]: [e.target.value],
         });
     };
     const handleSubmit = (e) => {
         e.preventDefault();
+        // logic tìm kiếm
     };
+
     return (
         <div className="game-search mb-10">
             <form action="" className="grid w-full grid-cols-1 items-end gap-5 lg:grid-cols-4" onSubmit={handleSubmit}>
@@ -25,59 +29,47 @@ export default function Filter() {
                     <label htmlFor="sort-order" className="font-medium text-gray-600">
                         Chọn mức giá:
                     </label>
-                    <select
-                        name="price-range"
-                        id="price-range"
-                        onChange={handleChange}
-                        className="mt-2 w-full rounded-lg border border-[#ddd] bg-white px-4 py-2 text-gray-600 duration-400"
-                    >
+                    <Select name="price-range" id="price-range" onChange={handleChange}>
                         <option value="under-100000">Dưới 100.000đ</option>
                         <option value="100000-200000">100.000đ - 200.000đ</option>
                         <option value="200000-500000">200.000đ - 500.000đ</option>
                         <option value="500000-1000000">500.000đ - 1.000.000đ</option>
                         <option value="over-1000000">Trên 1.000.000đ</option>
-                    </select>
+                    </Select>
                 </div>
                 <div className="flex flex-col">
                     <label htmlFor="sort-order" className="font-medium text-gray-600">
                         Sắp xếp theo:
                     </label>
-                    <select
-                        name="sort-order"
-                        onChange={handleChange}
-                        id="sort-order"
-                        className="mt-2 w-full rounded-lg border border-[#ddd] bg-white px-4 py-2 text-gray-600 duration-400"
-                    >
+                    <Select name="sort-order" id="sort-order" onChange={handleChange}>
                         <option value="default">Mặc định</option>
                         <option value="newest">Mới nhất</option>
                         <option value="oldest">Cũ nhất</option>
                         <option value="low-to-high">Giá: Thấp đến Cao</option>
                         <option value="high-to-low">Giá: Cao đến Thấp</option>
-                    </select>
+                    </Select>
                 </div>
                 <div className="flex flex-col">
                     <label htmlFor="code" className="font-medium text-gray-600">
-                        Tìm kiếm:
+                        Mã số:
                     </label>
-                    <input
-                        type="text"
+                    <Input
                         id="code"
+                        name="code"
                         onChange={handleChange}
-                        className="mt-2 h-full w-full rounded-lg border border-[#ddd] bg-white px-4 py-2 text-gray-600 duration-400"
                         placeholder="Tìm theo mã số"
+                        value={form.code}
                     />
                 </div>
                 <div className="flex items-end gap-2">
-                    <button className="ht-button-color-primary flex basis-1/2 items-center justify-center gap-1 px-2 text-xs xl:px-8 xl:text-sm">
+                    <Button type="submit">
                         <FaSearch /> Tìm kiếm
-                    </button>
-                    <Link
-                        href=""
-                        className="ht-button-transparent flex basis-1/2 items-center justify-center gap-1 px-2 text-xs xl:px-8 xl:text-sm"
-                    >
+                    </Button>
+
+                    <Button mode="transparent" Element="Link" href="">
                         <RxReset />
                         Đặt lại
-                    </Link>
+                    </Button>
                 </div>
             </form>
         </div>
