@@ -155,3 +155,55 @@ export const topUpRewards = [
     { id: 9, balance: 40 },
     { id: 10, balance: 20 },
 ];
+export const historiesWheel = [
+    {
+        id: 1,
+        username: "hoangtuanqn",
+        action: "đã quay trúng 88 robux",
+    },
+    {
+        id: 2,
+        username: "nguyenvana",
+        action: "đã quay trúng 188 robux",
+    },
+    {
+        id: 3,
+        username: "tranthib",
+        action: "đã quay trúng 288 robux",
+    },
+    {
+        id: 4,
+        username: "levanc",
+        action: "đã quay trúng 288 robux",
+    },
+    {
+        id: 5,
+        username: "nguyenthid",
+        action: "đã quay trúng 488 robux",
+    },
+    {
+        id: 6,
+        username: "hoangvan",
+        action: "đã quay trúng 588 robux",
+    },
+    {
+        id: 7,
+        username: "phamthanh",
+        action: "đã quay trúng 1000 robux",
+    },
+    {
+        id: 8,
+        username: "tranvan",
+        action: "đã quay trúng 8888 robux",
+    },
+    {
+        id: 9,
+        username: "nguyenhoang",
+        action: "đã quay trúng 288 robux",
+    },
+    {
+        id: 10,
+        username: "lethanh",
+        action: "đã quay trúng 188 robux",
+    },
+];
