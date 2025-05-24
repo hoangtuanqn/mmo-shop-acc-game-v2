@@ -21,7 +21,7 @@ export default function Ranking() {
                     rankinger.map((item, key) => (
                         <div
                             key={`Ranking${item.id}`}
-                            className="mb-2 flex cursor-pointer items-center justify-between rounded-lg px-4 py-3 duration-200 odd:bg-[#4f46e50d] hover:scale-105"
+                            className="mb-2 flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 duration-200 odd:bg-[#4f46e50d] hover:scale-105"
                         >
                             <div className="flex items-center gap-2">
                                 <img
@@ -32,18 +32,18 @@ export default function Ranking() {
                                 <span className="font-bold text-gray-800">{item.name}</span>
                             </div>
                             {/* <span className="font-bold text-primary">{formatNumber(item.total)}</span> */}
-                            <span className="rounded-sm bg-red-500 px-5 py-1 text-xs font-semibold text-white xl:text-sm">
+                            <span className="px-5 py-1 text-xs font-semibold text-white bg-red-500 rounded-sm xl:text-sm">
                                 {formatNumber(item.total)}đ
                             </span>
                         </div>
                     ))
                 ) : (
                     <>
-                        <h1 className="mb-6 text-center text-base font-bold">Chưa có dữ liệu</h1>
+                        <h1 className="mb-6 text-base font-bold text-center">Chưa có dữ liệu</h1>
                         <Button href="/" Element="Link">
-                            <FaRegHandshake className="ht-icon text-white" />
+                            <FaRegHandshake className="text-white ht-icon" />
                             <span> Nạp ngay</span>
-                            <FaRegHandshake className="ht-icon text-white" />
+                            <FaRegHandshake className="text-white ht-icon" />
                         </Button>
                     </>
                 )}

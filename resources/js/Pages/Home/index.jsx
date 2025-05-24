@@ -1,13 +1,16 @@
 import React from "react";
-import CategoryCommon from "./CategoryCommon";
-import CategoryGame from "./CategoryGame";
-import CategoryService from "./CategoryService";
-import CategoryLucky from "./CategoryLucky";
-import Hero from "./Hero";
-import ModalPopup from "../../Components/ModalPopup";
+import CategoriesPopular from "./CategoriesPopular";
 import MarqueeData from "../../components/MarqueeData";
-import { dataCategoriesCommon, dataCategoriesGame, dataCategoriesLucky, dataCategoriesService } from "./fakerData";
-import { histories } from "./fakerData";
+import Hero from "./Hero";
+import Categories from "./Categories";
+import ModalPopup from "../../Components/ModalPopup";
+import {
+    dataCategoriesCommon,
+    dataCategoriesGame,
+    dataCategoriesLucky,
+    dataCategoriesService,
+    histories,
+} from "./fakerData";
 
 export default function Home() {
     return (
@@ -16,21 +19,42 @@ export default function Home() {
             <MarqueeData histories={histories} />
 
             {/* Hiển thị tất cả các thể loại game */}
-            <CategoryCommon data={dataCategoriesCommon} />
+            <CategoriesPopular data={dataCategoriesCommon} />
 
             {/* Danh mục Game */}
-            {dataCategoriesGame.map((item) => (
-                <CategoryGame key={`CategoryGame-${item.id}`} nameCategory={item.name} data={item.data} />
+            {dataCategoriesGame.map((category) => (
+                <Categories
+                    key={`CategoryGame-${category.id}`}
+                    nameCategory={category.name}
+                    categories={category.data}
+                    type="account"
+                    url="/accounts"
+                    urlIconImage="/images/icons/ViewAllIcon.gif"
+                />
             ))}
 
             {/* Danh mục Cày thuê */}
-            {dataCategoriesService.map((item) => (
-                <CategoryService key={`CategoryService-${item.id}`} nameCategory={item.name} data={item.data} />
+            {dataCategoriesService.map((category) => (
+                <Categories
+                    key={`CategoryService-${category.id}`}
+                    nameCategory={category.name}
+                    categories={category.data}
+                    type="service"
+                    url="/services"
+                    urlIconImage="/images/icons/ViewAllIcon.gif"
+                />
             ))}
 
             {/* Danh mục Vòng quay may mắn */}
-            <CategoryLucky data={dataCategoriesLucky} />
-            <ModalPopup />
+            <Categories
+                nameCategory="Vòng Quay May Mắn"
+                categories={dataCategoriesLucky}
+                type="luckyWheel"
+                url="/lucky-wheel"
+                urlIconImage="/images/icons/PlayNowIcon.png"
+            />
+
+            {/* <ModalPopup /> */}
         </>
     );
 }

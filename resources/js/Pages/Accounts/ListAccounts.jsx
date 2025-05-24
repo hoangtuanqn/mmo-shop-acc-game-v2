@@ -22,39 +22,45 @@ export default function ListAccounts() {
                     </span>
                     <img
                         src="https://shopgame247.com/uploads/accounts/tai-khoan-lien-quan-mobile-74437_5933127.png"
-                        className="aspect-video w-full object-cover transition-all duration-200"
+                        className="object-cover w-full transition-all duration-200 aspect-video"
                         alt="Acc Game Có 500 robux"
                     />
-                    <div className="ht-flex-center flex-col bg-white px-4 pt-3 pb-5 text-xs md:mt-0 md:p-5 md:text-sm">
-                        <div className="ht-flex-center w-full flex-col text-black lg:flex-row">
-                            <div className="flex w-full flex-col py-3">
-                                <div className="mb-3 flex w-full items-center justify-between">
+                    <div className="flex-col justify-between h-full px-4 pt-3 pb-5 text-xs bg-white ht-flex-center md:mt-0 md:p-5 md:text-sm">
+                        <div className="flex-col w-full text-black ht-flex-center lg:flex-row">
+                            <div className="flex flex-col w-full py-3">
+                                <div className="flex items-center justify-between w-full mb-3">
                                     <span>Tướng:</span>
                                     <span className="font-bold">88</span>
                                 </div>
-                                <div className="mb-3 flex w-full items-center justify-between">
+                                <div className="flex items-center justify-between w-full mb-3">
                                     <span>Trang phục:</span>
                                     <span className="font-bold">4</span>
                                 </div>
-                                <div className="mb-3 flex w-full items-center justify-between">
-                                    <span>Hạng:</span>
-                                    <span className="font-bold">Đồng</span>
-                                </div>
-                                <div className="mb-3 flex w-full items-center justify-between">
-                                    <span>Thông tin:</span>
-                                    <span className="font-bold">Trắng thông tin</span>
-                                </div>
+                                {index > 2 && (
+                                    <>
+                                        <div className="flex items-center justify-between w-full mb-3">
+                                            <span>Hạng:</span>
+                                            <span className="font-bold">Đồng</span>
+                                        </div>
+                                        <div className="flex items-center justify-between w-full mb-3">
+                                            <span>Thông tin:</span>
+                                            <span className="font-bold">Trắng thông tin</span>
+                                        </div>
+                                    </>
+                                )}
                             </div>
                         </div>
 
-                        <div className="mx-auto mb-5 flex w-fit items-center gap-2 text-gray-600">
-                            <IoIosPricetags className="hidden md:block" />
-                            <span className="text-md">
-                                <span className="font-bold text-gray-400 line-through">200.000đ</span>
-                                <span className="text-pink-second pl-1 font-bold">2.000.000đ</span>
-                            </span>
+                        <div className="w-full">
+                            <div className="flex items-center gap-2 mx-auto mb-5 text-gray-600 w-fit">
+                                <IoIosPricetags className="hidden md:block" />
+                                <span className="text-md">
+                                    <span className="font-bold text-gray-400 line-through">200.000đ</span>
+                                    <span className="pl-1 font-bold text-pink-second">2.000.000đ</span>
+                                </span>
+                            </div>
+                            <Button className="w-full">Chi tiết</Button>
                         </div>
-                        <Button className="w-full">Chi tiết</Button>
                     </div>
                 </Link>
             ))}

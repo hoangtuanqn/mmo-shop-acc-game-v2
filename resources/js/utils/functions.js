@@ -22,3 +22,6 @@ export function random(a, b) {
     // random [a,b]
     return Math.floor(Math.random() * (b - a + 1)) + a;
 }
+export function formatPhone(phone) {
+    return phone.replace(/(\d{4})(\d{3})(\d{3})/, "$1.$2.$3");
+}

@@ -26,4 +26,7 @@
     .ht-disabled {
         @apply disabled:cursor-not-allowed disabled:bg-gray-100;
     }
+    .ht-text-primary {
+        @apply text-primary font-bold duration-75 hover:text-[#ff6cb6];
+    }
 }
