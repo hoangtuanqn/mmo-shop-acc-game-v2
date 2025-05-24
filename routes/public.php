@@ -6,11 +6,18 @@ use Inertia\Inertia;
 Route::get('/', function () {
     return Inertia::render('Home/index');
 });
-Route::get("/tai-khoan/{slug}", function ($slug) {
-    return Inertia::render('Accounts/index', [
-        'slug' => $slug
-    ]);
-})->name('account');
+Route::prefix("/tai-khoan")->name("accounts.")->group(function () {
+    Route::get("/{slug}", function ($slug) {
+        return Inertia::render('Accounts/index', [
+            'slug' => $slug
+        ]);
+    })->name('list');
+    Route::get("/chi-tiet/{slug}", function ($slug) {
+        return Inertia::render('Account/index', [
+            'slug' => $slug
+        ]);
+    })->name('detail');
+});
 Route::get("/dich-vu/{slug}", function ($slug) {
     return Inertia::render('Services/index', [
         'slug' => $slug

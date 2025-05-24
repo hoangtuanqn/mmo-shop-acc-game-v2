@@ -19,7 +19,7 @@ export default function GameFlipCard() {
         if (isClick) {
             timer1 = setTimeout(() => {
                 showAlert("success", "Chúc mừng bạn đã trúng thưởng");
-            }, 1400);
+            }, 900);
             timer2 = setTimeout(() => {
                 setFlippedCards(Array(9).fill(true));
             }, 1800);
@@ -39,7 +39,7 @@ export default function GameFlipCard() {
                     onClick={() => handleClick(index)}
                 >
                     <div
-                        className="relative h-full w-full transition-transform duration-500"
+                        className="relative w-full h-full transition-transform duration-500"
                         style={{
                             transformStyle: "preserve-3d",
                             transform: isFlipped ? "rotateY(180deg)" : "rotateY(0deg)",
@@ -47,19 +47,19 @@ export default function GameFlipCard() {
                     >
                         {/* Mặt trước */}
                         <div
-                            className="absolute h-full w-full overflow-hidden rounded"
+                            className="absolute w-full h-full overflow-hidden rounded"
                             style={{ backfaceVisibility: "hidden" }}
                         >
                             <img
                                 src="/images/faker/flip-card/cardBack.png"
                                 alt="Mặt sau"
-                                className="h-full w-full object-cover"
+                                className="object-cover w-full h-full"
                             />
                         </div>
 
                         {/* Mặt sau */}
                         <div
-                            className="absolute h-full w-full overflow-hidden rounded"
+                            className="absolute w-full h-full overflow-hidden rounded"
                             style={{
                                 backfaceVisibility: "hidden",
                                 transform: "rotateY(180deg)",
@@ -68,7 +68,7 @@ export default function GameFlipCard() {
                             <img
                                 src="https://cdn3.upanh.info/upload/server-sw3/images/500%20KC(2).jpg"
                                 alt="Mặt trước"
-                                className="h-full w-full object-cover"
+                                className="object-cover w-full h-full"
                             />
                         </div>
                     </div>

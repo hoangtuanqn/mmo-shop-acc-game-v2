@@ -21,8 +21,8 @@ export default function Header() {
 
     return (
         <>
-            <div className="container-content flex items-center justify-between py-4 xl:py-2.5">
-                <div className="gap-3 mx-4 text-xs ht-flex-center xl:mx-0">
+            <div className="container-content hidden items-center justify-between py-4 md:flex xl:py-2.5">
+                <div className="ht-flex-center mx-4 gap-3 text-xs xl:mx-0">
                     <a
                         href="https://www.facebook.com/phamhoangtuanqn/"
                         target="_blank"
@@ -46,11 +46,11 @@ export default function Header() {
                     <span className="hidden sm:block">(8:00 - 22:00)</span>
                 </span>
             </div>
-            <header className="sticky z-50 mx-4 bg-white rounded-lg shadow-sm ht-background-blur top-2 mb-9">
-                <div className="flex items-center justify-between py-3 mx-auto container-content">
+            <header className="ht-background-blur sticky top-2 z-50 mx-4 mb-9 rounded-lg bg-white shadow-sm">
+                <div className="container-content mx-auto flex items-center justify-between py-3">
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-2">
-                        <img src="/images/logo.png" alt="Logo Website" className="object-contain h-auto w-34" />
+                        <img src="/images/logo.png" alt="Logo Website" className="h-auto w-34 object-contain" />
                     </Link>
 
                     {/* Desktop Menu */}
@@ -79,7 +79,7 @@ export default function Header() {
                     <div className="hidden gap-2 xl:flex">
                         <Link
                             href={route("auth.login")}
-                            className="px-5 py-2 font-semibold text-center text-blue-500 transition border border-blue-500 rounded-lg hover:bg-blue-50"
+                            className="rounded-lg border border-blue-500 px-5 py-2 text-center font-semibold text-blue-500 transition hover:bg-blue-50"
                         >
                             Đăng nhập
                         </Link>
@@ -99,7 +99,7 @@ export default function Header() {
                     <div className="flex items-center gap-2 xl:hidden">
                         <Link
                             href={route("auth.login")}
-                            className="p-2 text-blue-600 transition bg-blue-100 rounded-full hover:bg-blue-200"
+                            className="rounded-full bg-blue-100 p-2 text-blue-600 transition hover:bg-blue-200"
                         >
                             <FaRegUser size={22} />
                         </Link>

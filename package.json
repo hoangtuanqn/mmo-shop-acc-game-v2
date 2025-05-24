@@ -27,6 +27,7 @@
         "react-loading-indicators": "^1.0.1",
         "react-router-dom": "^7.6.0",
         "sweetalert2": "^11.21.2",
+        "swiper": "^11.2.8",
         "ziggy-js": "^2.5.3"
     }
 }
