@@ -8,6 +8,7 @@ export default function Input({ id = "", type = "text", disabled = false, ...pro
                 "mt-2 h-full w-full rounded-lg border border-gray-300 px-4 py-2 text-gray-600 duration-400 " +
                     (disabled ? "ht-disabled" : " bg-white"),
             )}
+            id={id}
             disabled={disabled}
             {...props}
         />

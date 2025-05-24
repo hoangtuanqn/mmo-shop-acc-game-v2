@@ -9,6 +9,7 @@ export default function ModalPopup() {
         return !hideUntil || Date.now() > Number(hideUntil);
     });
     const handleClose = (e) => {
+        console.log("ghi log");
         // Check thuộc tính name có giá trị là close
         const isClose =
             e.target.getAttribute("name") === "close" ||
@@ -31,17 +32,20 @@ export default function ModalPopup() {
         <>
             {showNotice && (
                 <div
-                    className="bg-opacity-70 fixed inset-0 z-50 flex justify-center overflow-hidden bg-[#0006]"
+                    className="bg-opacity-70 fixed inset-0 z-50 flex items-center justify-center bg-[#0006] md:items-start"
                     name="close"
                     onClick={handleClose}
                 >
-                    <div className="animate-scaleUp relative top-3 h-fit w-[90%] max-w-[600px] overflow-hidden rounded-lg bg-gradient-to-br from-white to-[#f5f8ff] p-6 shadow-lg">
-                        <h2 className="text-primary ht-flex-center gap-x-2 border-b border-gray-200 pt-2 pb-4 text-center text-xl font-extrabold uppercase">
+                    <div
+                        className="animate-scaleUp relative top-3 h-fit max-h-[95vh] w-[90%] max-w-[600px] overflow-hidden rounded-lg bg-gradient-to-br from-white to-[#f5f8ff] p-6 shadow-lg"
+                        onClick={(e) => e.stopPropagation()}
+                    >
+                        <h2 className="text-primary ht-flex-center gap-x-2 border-b border-gray-200 pb-4 text-center text-sm font-extrabold uppercase md:text-xl">
                             <FaBell />
-                            Thông báo
+                            <span>Thông báo</span>
                             <FaBell />
                         </h2>
-                        <div className="content text-md mt-2 py-4 leading-6 text-gray-700">
+                        <div className="content text-md mt-2 max-h-[70vh] overflow-y-auto py-4 leading-6 text-gray-700">
                             <h3 className="text-lg font-semibold text-gray-800">
                                 Chào mừng bạn đến với dịch vụ bán tài khoản game của chúng tôi!
                             </h3>
@@ -53,7 +57,15 @@ export default function ModalPopup() {
                             <p className="text-md mt-2 text-gray-700">
                                 Đội ngũ hỗ trợ của chúng tôi luôn sẵn sàng giúp đỡ bạn trong quá trình mua sắm, đảm bảo
                                 rằng bạn có được trải nghiệm tốt nhất. Hãy theo dõi các chương trình khuyến mãi và ưu
-                                đãi đặc biệt mà chúng tôi thường xuyên cập nhật!
+                                đãi đặc biệt mà chúng tôi thường xuyên cập nhật! Đội ngũ hỗ trợ của chúng tôi luôn sẵn
+                                sàng giúp đỡ bạn trong quá trình mua sắm, đảm bảo rằng bạn có được trải nghiệm tốt nhất.
+                                Hãy theo dõi các chương trình khuyến mãi và ưu đãi đặc biệt mà chúng tôi thường xuyên
+                                cập nhật! Đội ngũ hỗ trợ của chúng tôi luôn sẵn sàng giúp đỡ bạn trong quá trình mua
+                                sắm, đảm bảo rằng bạn có được trải nghiệm tốt nhất. Hãy theo dõi các chương trình khuyến
+                                mãi và ưu đãi đặc biệt mà chúng tôi thường xuyên cập nhật! Đội ngũ hỗ trợ của chúng tôi
+                                luôn sẵn sàng giúp đỡ bạn trong quá trình mua sắm, đảm bảo rằng bạn có được trải nghiệm
+                                tốt nhất. Hãy theo dõi các chương trình khuyến mãi và ưu đãi đặc biệt mà chúng tôi
+                                thường xuyên cập nhật!
                             </p>
                             <p className="text-md mt-2 text-gray-700">
                                 Cảm ơn bạn đã tin tưởng chọn chúng tôi làm đối tác trong hành trình chơi game của bạn.
@@ -61,12 +73,12 @@ export default function ModalPopup() {
                             </p>
                         </div>
                         <div className="close_popup flex justify-center gap-2 border-t border-gray-200">
-                            <Button className="mt-4" name="close" mode="transparent">
+                            <Button className="mt-4" name="close" mode="transparent" onClick={handleClose}>
                                 <FaHandPointRight />
                                 Đã hiểu
                                 <FaHandPointLeft />
                             </Button>
-                            <Button className="mt-4" name="close-1h">
+                            <Button className="mt-4" name="close-1h" onClick={handleClose}>
                                 Tắt trong 1H
                             </Button>
                         </div>

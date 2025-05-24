@@ -11,6 +11,7 @@ import {
     dataCategoriesService,
     histories,
 } from "./fakerData";
+import Dialog from "../../components/Dialog";
 
 export default function Home() {
     return (

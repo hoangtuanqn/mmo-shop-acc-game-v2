@@ -21,10 +21,10 @@ export default function ListAccounts() {
                         key={`Account-${index}`}
                         className="relative flex flex-col overflow-hidden rounded-lg border border-[#f0f0f0] shadow-[0_10px_20px_rgba(0,0,0,0.05)] duration-200 hover:transform-[translateY(-4px)] hover:bg-[#e8f0ff] hover:shadow-[0_10px_25px_rgba(10,106,255,0.12)]"
                     >
-                        <span className="bg-primary absolute top-2 left-2 z-10 rounded-lg px-[10px] py-[5px] text-xs font-medium text-white">
-                            MS: 123456
+                        <span className="bg-primary absolute top-2 left-2 z-10 hidden rounded-lg px-[10px] py-[5px] text-xs font-medium text-white md:block">
+                            MS: #123456
                         </span>
-                        <span className="bg-pink-second absolute top-2 right-2 z-10 rounded-lg px-[10px] py-[5px] text-xs font-medium text-white">
+                        <span className="bg-pink-second absolute top-2 right-2 z-10 hidden rounded-lg px-[10px] py-[5px] text-xs font-medium text-white md:block">
                             -10%
                         </span>
                         <img
@@ -35,6 +35,10 @@ export default function ListAccounts() {
                         <div className="ht-flex-center h-full flex-col justify-between bg-white px-4 pt-3 pb-5 text-xs md:mt-0 md:p-5 md:text-sm">
                             <div className="ht-flex-center w-full flex-col text-black lg:flex-row">
                                 <div className="flex w-full flex-col py-3">
+                                    <div className="mb-3 flex w-full items-center justify-between text-gray-400 md:hidden">
+                                        <span>Mã số:</span>
+                                        <span className="font-bold">#123456</span>
+                                    </div>
                                     <div className="mb-3 flex w-full items-center justify-between">
                                         <span>Tướng:</span>
                                         <span className="font-bold">88</span>

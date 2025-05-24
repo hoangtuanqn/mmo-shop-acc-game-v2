@@ -28,6 +28,7 @@
         "react-router-dom": "^7.6.0",
         "sweetalert2": "^11.21.2",
         "swiper": "^11.2.8",
+        "yet-another-react-lightbox": "^3.23.2",
         "ziggy-js": "^2.5.3"
     }
 }
