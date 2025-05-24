@@ -11,7 +11,7 @@ function LoadingAnimation({ children, ms = 200 }) {
     }, []);
     return loading ? (
         <>
-            <div className="mt-4 flex w-full justify-center">
+            <div className="flex justify-center w-full mt-4">
                 <Commet color={["#32cd32", "#327fcd", "#cd32cd", "#cd8032"]} />
             </div>
         </>

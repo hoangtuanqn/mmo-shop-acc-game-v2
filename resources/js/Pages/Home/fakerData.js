@@ -60,8 +60,9 @@ export const dataCategoriesGame = [
                 id: 1,
                 name: "Nick Liên Quân Trắng Thông Tin",
                 image: "https://static2.mingame89.store/19426957-cdnimaget1/upload/fastcdn/acc-category-shopt1com/82472/images/ACC_LQ_TTT__%5B0A40C30%5D%5B1%5D.gif",
-                remaining: 0,
+                remaining: 2000,
                 sold: 1250,
+                url: "/tai-khoan/123456",
             },
             {
                 id: 2,
@@ -69,6 +70,7 @@ export const dataCategoriesGame = [
                 image: "https://static2.mingame89.store/19426957-cdnimaget1/upload/fastcdn/acc-category-shopt1com/82473/images/ACC_LQ_REG__%5B28EA653%5D%5B1%5D.gif",
                 remaining: 2000,
                 sold: 1250,
+                url: "/tai-khoan/123456",
             },
             {
                 id: 3,
@@ -76,6 +78,7 @@ export const dataCategoriesGame = [
                 image: "https://static2.mingame89.store/19426957-cdnimaget1/upload/images/Thi%E1%BA%BFt%20k%E1%BA%BF%20chua%20co%20ten.jpg",
                 remaining: 2000,
                 sold: 1250,
+                url: "/tai-khoan/123456",
             },
             {
                 id: 4,
@@ -83,6 +86,7 @@ export const dataCategoriesGame = [
                 image: "https://static2.mingame89.store/19426957-cdnimaget1/upload/images/qbTWQ4pwTe7UiCn.gif",
                 remaining: 2000,
                 sold: 1250,
+                url: "/tai-khoan/123456",
             },
             {
                 id: 5,
@@ -90,6 +94,7 @@ export const dataCategoriesGame = [
                 image: "https://static2.mingame89.store/19426957-cdnimaget1/upload/fastcdn/acc-category-shopt1com/82472/images/ACC_LQ_TTT__%5B0A40C30%5D%5B1%5D.gif",
                 remaining: 2000,
                 sold: 1250,
+                url: "/tai-khoan/123456",
             },
             {
                 id: 6,
@@ -97,6 +102,7 @@ export const dataCategoriesGame = [
                 image: "https://static2.mingame89.store/19426957-cdnimaget1/upload/fastcdn/acc-category-shopt1com/82473/images/ACC_LQ_REG__%5B28EA653%5D%5B1%5D.gif",
                 remaining: 2000,
                 sold: 1250,
+                url: "/tai-khoan/123456",
             },
             {
                 id: 7,
@@ -104,6 +110,7 @@ export const dataCategoriesGame = [
                 image: "https://static2.mingame89.store/19426957-cdnimaget1/upload/images/Thi%E1%BA%BFt%20k%E1%BA%BF%20chua%20co%20ten.jpg",
                 remaining: 2000,
                 sold: 1250,
+                url: "/tai-khoan/123456",
             },
             {
                 id: 8,
@@ -111,6 +118,7 @@ export const dataCategoriesGame = [
                 image: "https://static2.mingame89.store/19426957-cdnimaget1/upload/images/qbTWQ4pwTe7UiCn.gif",
                 remaining: 2000,
                 sold: 1250,
+                url: "/tai-khoan/123456",
             },
         ],
     },
@@ -123,6 +131,7 @@ export const dataCategoriesGame = [
                 image: "https://static2.mingame89.store/19426957-cdnimaget1/upload/fastcdn/acc-category-shopt1com/82460/images/ACC_FF_T%E1%BB%B0_CH%E1%BB%8CN_%5B41AF991%5D%5B1%5D.gif",
                 remaining: 2000,
                 sold: 1250,
+                url: "/tai-khoan/123456",
             },
             {
                 id: 2,
@@ -130,6 +139,7 @@ export const dataCategoriesGame = [
                 image: "https://static2.mingame89.store/19426957-cdnimaget1/upload/images/Nick%20Ng%E1%BB%8Dc%20R%E1%BB%93ng%20Online.png",
                 remaining: 2000,
                 sold: 1250,
+                url: "/tai-khoan/123456",
             },
             {
                 id: 3,
@@ -137,6 +147,7 @@ export const dataCategoriesGame = [
                 image: "https://static2.mingame89.store/19426957-cdnimaget1/upload/images/cnVqUaCIee_1659715132.png",
                 remaining: 2000,
                 sold: 1250,
+                url: "/tai-khoan/123456",
             },
             {
                 id: 4,
@@ -144,6 +155,7 @@ export const dataCategoriesGame = [
                 image: "https://shopnickv3.baocms.net/uploads/16-08-2023/f2f61393-45e2-4b71-9bb5-4e6a8f5c5d3a.gif",
                 remaining: 2000,
                 sold: 1250,
+                url: "/tai-khoan/123456",
             },
             {
                 id: 5,
@@ -151,6 +163,7 @@ export const dataCategoriesGame = [
                 image: "https://static2.mingame89.store/19426957-cdnimaget1/upload/fastcdn/acc-category-shopt1com/82460/images/ACC_FF_T%E1%BB%B0_CH%E1%BB%8CN_%5B41AF991%5D%5B1%5D.gif",
                 remaining: 2000,
                 sold: 1250,
+                url: "/tai-khoan/123456",
             },
             {
                 id: 6,
@@ -158,6 +171,7 @@ export const dataCategoriesGame = [
                 image: "https://static2.mingame89.store/19426957-cdnimaget1/upload/images/Nick%20Ng%E1%BB%8Dc%20R%E1%BB%93ng%20Online.png",
                 remaining: 2000,
                 sold: 1250,
+                url: "/tai-khoan/123456",
             },
             {
                 id: 7,
@@ -165,6 +179,7 @@ export const dataCategoriesGame = [
                 image: "https://static2.mingame89.store/19426957-cdnimaget1/upload/images/cnVqUaCIee_1659715132.png",
                 remaining: 2000,
                 sold: 1250,
+                url: "/tai-khoan/123456",
             },
             {
                 id: 8,
@@ -172,6 +187,7 @@ export const dataCategoriesGame = [
                 image: "https://shopnickv3.baocms.net/uploads/16-08-2023/f2f61393-45e2-4b71-9bb5-4e6a8f5c5d3a.gif",
                 remaining: 2000,
                 sold: 1250,
+                url: "/tai-khoan/123456",
             },
         ],
     },
@@ -187,12 +203,14 @@ export const dataCategoriesService = [
                 name: "Cày thuê uy tín",
                 image: "https://s3-hcm-r1.s3cloud.vn/mandan/imgsv3_4DG2ll8fp0LkEsm.jpeg",
                 sold: 1250,
+                url: "/dich-vu/123456",
             },
             {
                 id: 2,
                 name: "Vòng quay 8000 robux",
                 image: "https://s3-hcm-r1.s3cloud.vn/mandan/imgsv3_rJOKD72L5SfiE6e.jpeg",
                 sold: 1250,
+                url: "/dich-vu/123456",
             },
         ],
     },
@@ -203,12 +221,21 @@ export const dataCategoriesLucky = [
         name: "Bánh xe trúng roblox",
         image: "https://cdn3.imagetip.net/upload/server-sw3/images/anh%20dich%20vu/d/ezgif-1-b45203832a.gif",
         sold: 1250,
+        url: "/vong-quay/123456",
     },
     {
         id: 2,
         name: "Bán Gamepass BLOX FRUITS Vĩnh Viễn",
         image: "https://cdn3.imagetip.net/upload/server-sw3/images/610762thumvq.gif",
         sold: 1250,
+        url: "/vong-quay/123456",
+    },
+    {
+        id: 3,
+        name: "Lật Thẻ Săn Kim Cương",
+        image: "https://cdn3.upanh.info/upload/server-sw3/images/LyLTT%20-%2018_12_24%20-%20Minigame%20L%E1%BA%ADt%20th%E1%BA%BB%20san%20kim%20cuong.gif",
+        sold: 1250,
+        url: "/lat-the/123456",
     },
 ];
 

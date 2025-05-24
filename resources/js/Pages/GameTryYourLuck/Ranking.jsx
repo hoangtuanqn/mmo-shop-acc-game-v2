@@ -8,13 +8,12 @@ import DisplayTopUpRewards from "./DisplayTopUpRewards";
 
 export default function Ranking() {
     const [activeNav, setActiveNav] = useState(1);
-    const listNav = ["Hôm nay", "7 Ngày", "Quà đua top"];
-    const ok = [];
+    const listNav = ["Hôm nay", "7 Ngày", "Phần thưởng"];
     return (
         <div className="mt-3 mb-4">
             <h3 className="flex items-center py-2 text-xl font-bold">
                 <FaMedal className="mr-2 text-yellow-400" />
-                <span>Top quay thưởng</span>
+                <span>Top chơi</span>
             </h3>
             <ul className="mt-2 grid grid-cols-3 items-center gap-2 rounded-lg border border-gray-400 px-2 py-1.5 text-center">
                 {listNav.map((item, key) => (
@@ -23,6 +22,7 @@ export default function Ranking() {
                         onClick={() => setActiveNav(key + 1)}
                         className={clsx("cursor-pointer", {
                             "ht-style-color-primary px-2 py-2": activeNav === key + 1,
+                            "text-primary font-semibold": activeNav !== key + 1,
                         })}
                     >
                         {item}
