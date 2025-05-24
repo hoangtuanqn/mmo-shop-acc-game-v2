@@ -60,7 +60,7 @@ export const dataCategoriesGame = [
                 id: 1,
                 name: "Nick Liên Quân Trắng Thông Tin",
                 image: "https://static2.mingame89.store/19426957-cdnimaget1/upload/fastcdn/acc-category-shopt1com/82472/images/ACC_LQ_TTT__%5B0A40C30%5D%5B1%5D.gif",
-                remaining: 2000,
+                remaining: 0,
                 sold: 1250,
             },
             {

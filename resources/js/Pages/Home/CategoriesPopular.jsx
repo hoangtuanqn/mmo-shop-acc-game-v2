@@ -1,5 +1,5 @@
 import React from "react";
-import HeadLine from "./../../components/Headline";
+import HeadLine from "../../components/Headline";
 
 export default function Category({ data }) {
     return (
@@ -9,14 +9,14 @@ export default function Category({ data }) {
                 {data.map((item) => (
                     <div
                         key={`${item.name}-${item.id}`}
-                        className="ht-flex-center group max-h-[120px] cursor-pointer flex-col rounded-lg border border-[#0a6aff26] bg-[#f0f5ff] px-10 py-4 shadow-[0_5px_15px_#00000008] transition-all duration-200 hover:transform-[translateY(-4px)] hover:border-[rgba(10,106,255,0.3)] hover:bg-[#e8f0ff] hover:shadow-[0_10px_25px_rgba(10,106,255,0.12)]"
+                        className="ht-flex-center group border-primary max-h-[120px] cursor-pointer flex-col rounded-lg border bg-white px-2 py-4 shadow-[0_5px_15px_#00000008] transition-all duration-200 hover:transform-[translateY(-4px)] hover:border-[rgba(10,106,255,0.3)] hover:bg-[#e8f0ff] hover:shadow-[0_10px_25px_rgba(10,106,255,0.12)] lg:px-6"
                     >
                         <img
                             src={item.image}
                             alt={item.name}
-                            className="mb-2 aspect-square w-[55px] rounded-full bg-white p-[5px]"
+                            className="mb-2 aspect-square w-[45px] rounded-full object-center"
                         />
-                        <span className="text-sm font-medium text-center text-primary">{item.name}</span>
+                        <span className="text-xs font-medium text-center text-primary lg:text-sm">{item.name}</span>
                     </div>
                 ))}
             </div>
