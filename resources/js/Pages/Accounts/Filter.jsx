@@ -23,8 +23,8 @@ export default function Filter() {
     };
 
     return (
-        <div className="game-search mb-10">
-            <form action="" className="grid w-full grid-cols-1 items-end gap-5 lg:grid-cols-4" onSubmit={handleSubmit}>
+        <div className="mb-10 game-search">
+            <form action="" className="grid items-end w-full grid-cols-1 gap-5 lg:grid-cols-4" onSubmit={handleSubmit}>
                 <div className="flex flex-col">
                     <label htmlFor="sort-order" className="font-medium text-gray-600">
                         Chọn mức giá:
@@ -62,11 +62,11 @@ export default function Filter() {
                     />
                 </div>
                 <div className="flex items-end gap-2">
-                    <Button type="submit">
+                    <Button type="submit" className="flex-1">
                         <FaSearch /> Tìm kiếm
                     </Button>
 
-                    <Button mode="transparent" Element="Link" href="">
+                    <Button mode="transparent" Element="Link" href="" className="flex-1">
                         <RxReset />
                         Đặt lại
                     </Button>

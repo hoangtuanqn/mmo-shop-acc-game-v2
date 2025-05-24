@@ -18,6 +18,22 @@ export function showAlert(status = "success", message) {
         icon: status,
     });
 }
+export function showAlertImage({
+    title = "Chúc mừng bạn",
+    message = "",
+    image = "/images/icons/congratulationYouWin.png",
+    width = 180,
+    height = 80,
+}) {
+    Swal.fire({
+        title: title,
+        text: message,
+        imageUrl: image,
+        imageWidth: width,
+        imageHeight: height,
+        imageAlt: "Custom image",
+    });
+}
 export function random(a, b) {
     // random [a,b]
     return Math.floor(Math.random() * (b - a + 1)) + a;

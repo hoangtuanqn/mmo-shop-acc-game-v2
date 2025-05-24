@@ -17,7 +17,14 @@ Route::get("/dich-vu/{slug}", function ($slug) {
     ]);
 })->name('service');
 Route::get("/vong-quay/{slug}", function ($slug) {
-    return Inertia::render('LuckyWheel/index', [
-        'slug' => $slug
+    return Inertia::render('GameTryYourLuck/index', [
+        'slug' => $slug,
+        'type' => 'luckyWheel'
     ]);
 })->name('lucky');
+Route::get("/lat-the/{slug}", function ($slug) {
+    return Inertia::render('GameTryYourLuck/index', [
+        'slug' => $slug,
+        'type'  => 'flipCard'
+    ]);
+})->name('flip-card');

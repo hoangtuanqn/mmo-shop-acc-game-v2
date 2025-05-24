@@ -49,12 +49,12 @@ export default function Home() {
             <Categories
                 nameCategory="Vòng Quay May Mắn"
                 categories={dataCategoriesLucky}
-                type="luckyWheel"
-                url="/lucky-wheel"
+                type="tryYourLuck"
+                url="/try-your-luck"
                 urlIconImage="/images/icons/PlayNowIcon.png"
             />
 
-            {/* <ModalPopup /> */}
+            <ModalPopup />
         </>
     );
 }
