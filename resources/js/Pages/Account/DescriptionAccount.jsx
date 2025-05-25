@@ -5,7 +5,7 @@ import Button from "../../components/Form/Button";
 import DialogConfirm from "./DialogConfirm";
 
 export default function DescriptionAccount() {
-    const [showConfirm, setShowConfim] = useState(false);
+    const [showConfirm, setShowConfirm] = useState(false);
     return (
         <>
             <div className="flex flex-col rounded-xl bg-white p-4 shadow-sm lg:basis-5/12">
@@ -23,15 +23,15 @@ export default function DescriptionAccount() {
                         Thông tin acc
                     </h3>
                     <ul className="mt-4 flex flex-col gap-4 px-4 text-xs md:text-sm">
-                        <li className="flex items-center justify-between border-b border-slate-200 pb-3">
+                        <li className="mt-2 flex items-center justify-between border-b border-slate-200 pb-1">
                             <span>Roblox:</span>
                             <span className="font-semibold">Blox Fruits</span>
                         </li>
-                        <li className="flex items-center justify-between border-b border-slate-200 pb-3">
+                        <li className="mt-2 flex items-center justify-between border-b border-slate-200 pb-1">
                             <span>Roblox:</span>
                             <span className="font-semibold">Blox Fruits</span>
                         </li>
-                        <li className="flex items-center justify-between border-b border-slate-200 pb-3">
+                        <li className="mt-2 flex items-center justify-between border-b border-slate-200 pb-1">
                             <span>Roblox:</span>
                             <span className="font-semibold">Blox Fruits</span>
                         </li>
@@ -51,12 +51,12 @@ export default function DescriptionAccount() {
                         Giá cả phải chăng, mang đến giá trị tuyệt vời cho bạn
                     </p>
                 </div>
-                <Button className="order-2 mt-6 w-full py-4 lg:order-4" onClick={() => setShowConfim(true)}>
+                <Button className="order-2 mt-6 w-full py-4 lg:order-4" onClick={() => setShowConfirm(true)}>
                     <FaShoppingCart />
                     <span>Mua Ngay</span>
                 </Button>
             </div>
-            {showConfirm && <DialogConfirm isShow={setShowConfim} />}
+            {showConfirm && <DialogConfirm isShow={setShowConfirm} />}
         </>
     );
 }

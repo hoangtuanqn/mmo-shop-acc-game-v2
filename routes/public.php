@@ -17,6 +17,11 @@ Route::prefix("/tai-khoan")->name("accounts.")->group(function () {
             'slug' => $slug
         ]);
     })->name('detail');
+    Route::get("/thu-van-may/{slug}", function ($slug) {
+        return Inertia::render('Random/index', [
+            'slug' => $slug
+        ]);
+    })->name('random');
 });
 Route::get("/dich-vu/{slug}", function ($slug) {
     return Inertia::render('Services/index', [

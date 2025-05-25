@@ -7,6 +7,7 @@ import ModalPopup from "../../Components/ModalPopup";
 import {
     dataCategoriesCommon,
     dataCategoriesGame,
+    dataCategoriesGameRandom,
     dataCategoriesLucky,
     dataCategoriesService,
     histories,
@@ -22,7 +23,7 @@ export default function Home() {
             {/* Hiển thị tất cả các thể loại game */}
             <CategoriesPopular data={dataCategoriesCommon} />
 
-            {/* Danh mục Game */}
+            {/* Danh mục Tài khoản Game */}
             {dataCategoriesGame.map((category) => (
                 <Categories
                     key={`CategoryGame-${category.id}`}
@@ -31,6 +32,18 @@ export default function Home() {
                     type="account"
                     url="/accounts"
                     urlIconImage="/images/icons/ViewAllIcon.gif"
+                />
+            ))}
+
+            {/* Danh mục Tài khoản random Game */}
+            {dataCategoriesGameRandom.map((category) => (
+                <Categories
+                    key={`CategoryGameRandom-${category.id}`}
+                    nameCategory={category.name}
+                    categories={category.data}
+                    type="random"
+                    url="/randoms"
+                    urlIconImage="https://shopasmobile.vn/assets/img/mua.webp"
                 />
             ))}
 

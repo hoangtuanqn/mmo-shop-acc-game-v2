@@ -2,8 +2,13 @@
 
 - Mở lại popup
 - Lưu ý các phần tử đều phải có thuộc tính id, để làm key
-- Fix lại tiêu đề
-- Add animation vào
+
 - Bật chức năng nhận quà ngay footer
-- Code thêm độ ưu tiên hiển thị (priority)
+- Code thêm độ ưu tiên hiển thị danh mục (priority)
 - Thêm thông báo từng thể loại danh mục. VD: https://shopbacgau.com/minigame-lat-the-san-robux
+- fix lỗi css select trên mobile
+
+- Code tính năng nạp tiền ATm như shopbacgau
+- Thêm tính năng vòng quay may mắn (Quay trúng acc game)
+- Thêm tính năng bình luận ở dưới nữa
+- phát triển tính năng bán vật phẩm như CMSNT
