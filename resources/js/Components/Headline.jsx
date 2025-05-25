@@ -5,20 +5,20 @@ import { FaArrowTrendUp } from "react-icons/fa6";
 import { GiPerspectiveDiceSixFacesRandom } from "react-icons/gi";
 import { RxColorWheel } from "react-icons/rx";
 
-export default function HeadLine({ title, url = "", customHeading, type = "account" }) {
+export default function HeadLine({ title, url = "", customHeading, type = "" }) {
     const iconMap = {
         account: FaGamepad,
         service: FaGamepad,
         random: GiPerspectiveDiceSixFacesRandom,
         tryYourLuck: RxColorWheel,
     };
-    const IconComponent = iconMap[type] || "";
+    const IconComponent = iconMap[type] || undefined;
     return (
         <div className="flex items-start justify-between">
             <h2
                 className={`before:bg-primary relative mb-6 pb-2.5 text-sm font-bold uppercase before:absolute before:bottom-0 before:h-[2.5px] before:w-[60px] before:rounded-lg md:flex md:items-center md:gap-2 md:text-2xl md:before:w-[80px] ${customHeading}`}
             >
-                {IconComponent && <IconComponent className="text-primary hidden font-bold md:block" />}
+                {IconComponent && <IconComponent className="hidden font-bold md:block" />}
                 {title}
             </h2>
             {url && (
