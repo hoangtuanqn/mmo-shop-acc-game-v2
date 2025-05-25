@@ -40,3 +40,15 @@ Route::get("/lat-the/{slug}", function ($slug) {
         'type'  => 'flipCard'
     ]);
 })->name('flip-card');
+
+
+Route::prefix("/tin-tuc")->name("news.")->group(function () {
+    Route::get("/", function () {
+        return Inertia::render('News/index');
+    })->name('list');
+    Route::get("/chi-tiet/{slug}", function ($slug) {
+        return Inertia::render('News/Detail', [
+            'slug' => $slug
+        ]);
+    })->name('detail');
+});

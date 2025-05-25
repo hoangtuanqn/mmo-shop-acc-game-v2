@@ -247,26 +247,25 @@ export const rankinger = [
     },
     {
         id: 2,
-        name: "Nguyễn Văn A",
+        name: "Nguyễn Minh Tuấn",
         total: 1200000,
     },
     {
         id: 3,
-        name: "Trần Thị B",
+        name: "Phạm Thị Hương",
         total: 900000,
     },
     {
         id: 4,
-        name: "Lê Văn C",
+        name: "Lê Quốc Đạt",
         total: 600000,
     },
     {
         id: 5,
-        name: "Nguyễn Thị D",
+        name: "Trần Thị Mai",
         total: 300000,
     },
 ];
-
 export const histories = [
     {
         id: 1,
