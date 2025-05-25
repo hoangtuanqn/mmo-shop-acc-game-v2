@@ -8,7 +8,7 @@ export default function Post({ post, index }) {
             key={`TinTuc-${index}`}
         >
             <Link
-                href="/"
+                href={post.url}
                 className={`border-pink-second block ${index === 0 ? "h-[160px] lg:h-[400px]" : "h-[160px]"} overflow-hidden border-b`}
             >
                 <img
@@ -22,7 +22,7 @@ export default function Post({ post, index }) {
                     <FaCalendarAlt /> <span>20/5/2025 - 20:08:30</span>
                 </div>
                 <Link
-                    href="/"
+                    href={post.url}
                     className={`ht-text-primary line-clamp-2 text-base ${index === 0 ? "lg:text-2xl" : ""} font-bold duration-200 hover:line-clamp-none`}
                 >
                     <h1>{post.title}</h1>
@@ -33,7 +33,7 @@ export default function Post({ post, index }) {
                     {post.excerpt}
                 </p>
                 <Link
-                    href="/"
+                    href={post.url}
                     className={`text-pink-second hover:text-primary flex items-center gap-2 font-bold duration-200 hover:transform-[translateX(2px)] ${index === 0 ? "text-sm" : "text-xs"}`}
                 >
                     <span>Đọc tiếp</span>
