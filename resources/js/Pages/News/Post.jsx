@@ -23,7 +23,7 @@ export default function Post({ post, index }) {
                 </div>
                 <Link
                     href={post.url}
-                    className={`ht-text-primary line-clamp-2 text-base ${index === 0 ? "lg:text-2xl" : ""} font-bold duration-200 hover:line-clamp-none`}
+                    className={`ht-text-primary line-clamp-2 text-base ${index === 0 ? "lg:text-xl" : ""} font-bold duration-200 hover:line-clamp-none`}
                 >
                     <h1>{post.title}</h1>
                 </Link>

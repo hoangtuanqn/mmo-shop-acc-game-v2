@@ -24,7 +24,7 @@ export default function OrderService() {
     const handleChange = (e) => {
         setData({
             ...data,
-            [e.target.name]: [e.target.value],
+            [e.target.name]: e.target.value,
         });
         if (e.target.name === "package_id") {
             setData({
@@ -40,9 +40,9 @@ export default function OrderService() {
     };
 
     return (
-        <div className="p-6 bg-white rounded-lg shadow-sm">
+        <div className="rounded-lg bg-white p-6 shadow-sm">
             <HeadLine title={"Thông tin đặt dịch vụ"} customHeading="md:text-xl" />
-            <form action="" className="flex flex-col w-full gap-4 md:gap-6" onSubmit={handleSubmit}>
+            <form action="" className="flex w-full flex-col gap-4 md:gap-6" onSubmit={handleSubmit}>
                 <div className="flex flex-col">
                     <label htmlFor="package_id" className="font-medium text-gray-600">
                         Dịch vụ
@@ -62,8 +62,8 @@ export default function OrderService() {
                     </select>
                 </div>
 
-                <div className="flex flex-col justify-between w-full gap-4 md:flex-row">
-                    <div className="flex flex-col flex-1">
+                <div className="flex w-full flex-col justify-between gap-4 md:flex-row">
+                    <div className="flex flex-1 flex-col">
                         <label htmlFor="game_account" className="font-medium text-gray-600">
                             Tài Khoản
                         </label>
@@ -77,7 +77,7 @@ export default function OrderService() {
                             required
                         />
                     </div>
-                    <div className="flex flex-col flex-1">
+                    <div className="flex flex-1 flex-col">
                         <label htmlFor="game_password" className="font-medium text-gray-600">
                             Mật Khẩu
                         </label>
@@ -104,7 +104,7 @@ export default function OrderService() {
                             )}
                         </div>
                     </div>
-                    <div className="flex flex-col flex-1">
+                    <div className="flex flex-1 flex-col">
                         <label htmlFor="info_required" className="font-medium text-gray-600">
                             Thông tin cần thiết
                         </label>
@@ -115,13 +115,12 @@ export default function OrderService() {
                             onChange={handleChange}
                             className="mt-2 h-full w-full rounded-lg border border-[#ddd] bg-white px-4 py-2 text-gray-600 duration-400"
                             placeholder="Link game pass, máy chủ hoặc thông tin cần thiết, ..."
-                            required
                         />
                     </div>
                 </div>
 
-                <div className="flex flex-col justify-between w-full gap-4 md:flex-row">
-                    <div className="flex flex-col flex-1">
+                <div className="flex w-full flex-col justify-between gap-4 md:flex-row">
+                    <div className="flex flex-1 flex-col">
                         <label className="font-medium text-gray-600">Tổng tiền</label>
                         <input
                             type="text"
@@ -132,7 +131,7 @@ export default function OrderService() {
                             required
                         />
                     </div>
-                    <div className="flex flex-col flex-1">
+                    <div className="flex flex-1 flex-col">
                         <label htmlFor="giftcode" className="font-medium text-gray-600">
                             Mã giảm giá (Nếu có)
                         </label>
@@ -147,7 +146,7 @@ export default function OrderService() {
                     </div>
                 </div>
 
-                <div className="flex flex-col flex-1">
+                <div className="flex flex-1 flex-col">
                     <label htmlFor="note" className="font-medium text-gray-600">
                         Ghi chú
                     </label>

@@ -46,7 +46,7 @@ export default function Header() {
                     <span className="hidden sm:block">(8:00 - 22:00)</span>
                 </span>
             </div>
-            <header className="ht-background-blur sticky top-2 z-50 mx-4 mb-9 rounded-lg bg-white shadow-sm">
+            <header className="ht-background-blur sticky top-2 z-50 mx-4 mb-9 rounded-lg bg-white shadow-xs">
                 <div className="container-content mx-auto flex items-center justify-between py-3">
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-2">
@@ -64,7 +64,7 @@ export default function Header() {
                         <NavLink href="/lich-su-mua-nick" active={url === "/lich-su-mua-nick"} icon={<FaHistory />}>
                             Lịch sử mua nick
                         </NavLink>
-                        <NavLink href="/tai-khoan" active={url === "/tai-khoan"} icon={<FaUser />}>
+                        <NavLink href="/thong-tin" active={url === "/thong-tin"} icon={<FaUser />}>
                             Tài khoản
                         </NavLink>
                         <NavLink href="/dong-tien" active={url === "/dong-tien"} icon={<FaMoneyBillWave />}>
