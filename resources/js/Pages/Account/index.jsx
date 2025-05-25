@@ -32,7 +32,7 @@ export default function Account() {
     return (
         <>
             <div className="mb-20">
-                <div className="flex flex-col gap-4 lg:flex-row lg:gap-2">
+                <div className="flex flex-col gap-4 lg:flex-row lg:gap-2 items-start">
                     <div className="max-h-[75%] overflow-hidden rounded-xl bg-white p-4 shadow-sm lg:basis-7/12">
                         <div onClick={() => setOpen(true)} className="cursor-pointer">
                             <img

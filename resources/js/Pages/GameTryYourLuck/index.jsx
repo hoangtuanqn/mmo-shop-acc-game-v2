@@ -94,7 +94,7 @@ export default function LuckyWheel({ type = "luckyWheel" }) {
                                             />
                                         )}
                                         {type === "flipCard" && <GameFlipCard />}
-                                        <div className="w-[100%] pt-8 lg:w-[70%]">
+                                        <div className="w-[100%] pt-8 px-4 lg:w-[70%]">
                                             <form
                                                 action=""
                                                 className="flex-col w-full gap-4 ht-flex-center"

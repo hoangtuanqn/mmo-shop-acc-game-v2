@@ -319,3 +319,48 @@ export const histories = [
         action: "đã mua acc mã số #29",
     },
 ];
+
+export const dataCategoriesGameRandom = [
+    {
+        id: 1,
+        name: "Nick Fisch",
+        data: [
+            {
+                id: 1,
+                name: "Random fisch lv500+ random nhiều cần + coin",
+                image: "https://cdn3.upanh.info/upload/server-sw3/images/Thumb%20all%20web/Nick/random%20fisch%20lv500%2B%20random%20nhi%E1%BB%81u%20c%E1%BA%A7n%20%2B%20coin.png",
+                price: 200000,
+                remaining: 2000,
+                sold: 1250,
+                url: "/tai-khoan/thu-van-may/123456",
+            },
+            {
+                id: 2,
+                name: "Random fisch lv750+ random nhiều cần + coin",
+                image: "https://cdn3.upanh.info/upload/server-sw3/images/Thumb%20all%20web/Nick/random%20fisch%20lv750%2B%20random%20nhi%E1%BB%81u%20c%E1%BA%A7n%20%2B%20coin.png",
+                price: 200000,
+                remaining: 2000,
+                sold: 1250,
+                url: "/tai-khoan/thu-van-may/123456",
+            },
+            {
+                id: 3,
+                name: "Random fisch 2m Coins",
+                image: "https://cdn3.upanh.info/upload/server-sw3/images/Thumb%20all%20web/Nick/Random%20fisch%202m%20Coins.png",
+                price: 200000,
+                remaining: 2000,
+                sold: 1250,
+                url: "/tai-khoan/thu-van-may/123456",
+            },
+            {
+                id: 4,
+                name: "Random Fisch 10M Coin",
+                image: "https://cdn3.upanh.info/upload/server-sw3/images/Thumb%20all%20web/Nick/Random%20Fisch%2010M%20Coin.png",
+                price: 200000,
+                remaining: 2000,
+                sold: 1250,
+                url: "/tai-khoan/thu-van-may/123456",
+            },
+        ],
+    },
+];
