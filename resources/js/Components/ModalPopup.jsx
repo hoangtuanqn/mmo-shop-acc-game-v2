@@ -9,7 +9,6 @@ export default function ModalPopup() {
         return !hideUntil || Date.now() > Number(hideUntil);
     });
     const handleClose = (e) => {
-        console.log("ghi log");
         // Check thuộc tính name có giá trị là close
         const isClose =
             e.target.getAttribute("name") === "close" ||

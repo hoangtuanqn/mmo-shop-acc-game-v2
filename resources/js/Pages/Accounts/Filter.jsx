@@ -14,7 +14,7 @@ export default function Filter() {
     const handleChange = (e) => {
         setForm({
             ...form,
-            [e.target.name]: [e.target.value],
+            [e.target.name]: e.target.value,
         });
     };
     const handleSubmit = (e) => {
@@ -23,8 +23,8 @@ export default function Filter() {
     };
 
     return (
-        <div className="mb-10 game-search">
-            <form action="" className="grid items-end w-full grid-cols-1 gap-5 lg:grid-cols-4" onSubmit={handleSubmit}>
+        <div className="game-search mb-10">
+            <form action="" className="grid w-full grid-cols-1 items-end gap-5 lg:grid-cols-4" onSubmit={handleSubmit}>
                 <div className="flex flex-col">
                     <label htmlFor="sort-order" className="font-medium text-gray-600">
                         Chọn mức giá:

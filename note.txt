@@ -12,3 +12,5 @@
 - Thêm tính năng vòng quay may mắn (Quay trúng acc game)
 - Thêm tính năng bình luận ở dưới nữa
 - phát triển tính năng bán vật phẩm như CMSNT
+
+- thêm phần chia sẽ bài viết (Sử dụng headmet cho bài viết)
