@@ -3,6 +3,7 @@ import { FaDiscord, FaFacebookF, FaTelegramPlane, FaTiktok, FaYoutube } from "re
 import { LuChevronRight } from "react-icons/lu";
 import Gift from "./Gift";
 import { Link } from "@inertiajs/react";
+import GoToTop from "./GoToTop";
 const IconSocial = ({ children, url = "#" }) => {
     return (
         <a
@@ -16,6 +17,7 @@ const IconSocial = ({ children, url = "#" }) => {
 export default function Footer() {
     return (
         <>
+            <GoToTop />
             <footer>
                 <div className="bg-[#151E33] px-2 py-15">
                     <div className="container-content grid grid-cols-1 gap-12 border-b-2 border-[#ffffff26] pb-10 text-white sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">

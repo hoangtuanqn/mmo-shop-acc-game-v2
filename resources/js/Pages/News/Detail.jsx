@@ -7,7 +7,7 @@ export default function Detail() {
             <div className="flex items-center gap-2 font-bold text-gray-400">
                 <FaCalendarAlt /> <span>20/5/2025 - 20:08:30</span>
             </div>
-            <div className="htcustom-description htcustom-news mt-6">
+            <div className="htcustom-description htcustom-news mt-2">
                 <h1>Vietnix ra mắt VPS N8N – Giải pháp tối ưu hiệu suất và bảo mật cho tự động hóa quy trình</h1>
                 <p>
                     Từ ngày 15/05/2025, Vietnix chính thức ra mắt dịch vụ VPS N8N – giải pháp tối ưu giúp người dùng
