@@ -1,6 +1,7 @@
 import React from "react";
 import ItemLink from "./ItemLink";
 import { formatNumber } from "../../../utils/functions";
+import { route } from "ziggy-js";
 
 export default function Sidebar() {
     const userInfo = [
@@ -17,20 +18,20 @@ export default function Sidebar() {
         {
             src: "https://cdn3.upanh.info/upload/server-sw3/images/Icon/ttin%20tai%20khoan.png",
             name: "Thông tin tài khoản",
-            url: "#",
+            url: route("profile.index"),
         },
         {
             src: "https://cdn3.upanh.info/upload/server-sw3/images/Icon/doi%20mk.png",
             name: "Đổi mật khẩu",
-            url: "#",
+            url: route("profile.changePassword"),
         },
     ];
 
     const referralLinks = [
         {
             src: "https://cdn3.upanh.info/upload/server-sw3/images/Icon/Ma%20gi%E1%BB%9Bi%20thi%E1%BB%87u.png",
-            name: "Mã giới thiệu",
-            url: "#",
+            name: "Giới thiệu bạn bè",
+            url: route('profile.affiliate'),
         },
         {
             src: "https://cdn3.upanh.info/upload/server-sw3/images/Icon/Minigame%20gi%E1%BB%9Bi%20thi%E1%BB%87u%20b%E1%BA%A1n%20be.png",
@@ -49,7 +50,7 @@ export default function Sidebar() {
         },
         {
             src: "https://cdn3.upanh.info/upload/server-sw3/images/Icon/Quy%20d%E1%BB%95i%20hoa%20h%E1%BB%93ng.png",
-            name: "Quy đổi hoa hồng",
+            name: "Rút tiền giới thiệu",
             url: "#",
         },
     ];
@@ -162,9 +163,7 @@ export default function Sidebar() {
 
             {/* Referral */}
             <section className="rounded-3xl border border-gray-100 bg-white px-7 py-5 shadow-xs">
-                <h4 className="mb-4 border-b border-gray-100 pb-2 pl-1 text-base font-bold tracking-wide">
-                    Giới thiệu bạn bè
-                </h4>
+                <h4 className="mb-4 border-b border-gray-100 pb-2 pl-1 text-base font-bold tracking-wide">Hoa hồng</h4>
                 <nav>
                     <ItemLinkList items={referralLinks} />
                 </nav>

@@ -1,7 +1,6 @@
 import React from "react";
 import Sidebar from "../pages/Profile/components/Sidebar";
 
-
 export default function ProfileLayout({ children }) {
     return (
         <div className="mb-20">

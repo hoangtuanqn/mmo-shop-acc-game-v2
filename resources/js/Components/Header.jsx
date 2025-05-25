@@ -64,7 +64,7 @@ export default function Header() {
                         <NavLink href="/lich-su-mua-nick" active={url === "/lich-su-mua-nick"} icon={<FaHistory />}>
                             Lịch sử mua nick
                         </NavLink>
-                        <NavLink href="/tai-khoan" active={url === "/tai-khoan"} icon={<FaUser />}>
+                        <NavLink href="/thong-tin" active={url === "/thong-tin"} icon={<FaUser />}>
                             Tài khoản
                         </NavLink>
                         <NavLink href="/dong-tien" active={url === "/dong-tien"} icon={<FaMoneyBillWave />}>

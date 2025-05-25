@@ -2,8 +2,10 @@ import React from "react";
 import HeadLineCenter from "../../../components/HeadLineCenter";
 import { FaUser, FaEnvelope, FaCalendarAlt, FaShieldAlt, FaCoins, FaGem, FaCrown, FaKey } from "react-icons/fa";
 import HeadLine from "../../../components/Headline";
+import MasterLayout from "../../../layout/MasterLayout";
+import ProfileLayout from "../../../layout/ProfileLayout";
 
-export default function Info() {
+function Info() {
     // Giả lập dữ liệu user, sau này lấy từ props hoặc API
     const user = {
         id: 1234,
@@ -66,8 +68,8 @@ export default function Info() {
                             <span className="font-bold">{formatNumber(user.tft)}</span>
                         </div>
                         <div className="flex items-center gap-2">
-                            <FaGem />
-                            <span className="text-gray-500">Kim Cương:</span>
+                            <FaGem className="text-blue-600" />
+                            <span className="t text-gray-500">Kim Cương:</span>
                             <span className="font-bold">{formatNumber(user.kimcuong)}</span>
                         </div>
                         <div className="flex items-center gap-2">
@@ -86,3 +88,9 @@ export default function Info() {
         </div>
     );
 }
+Info.layout = (page) => (
+    <MasterLayout>
+        <ProfileLayout>{page}</ProfileLayout>
+    </MasterLayout>
+);
+export default Info;

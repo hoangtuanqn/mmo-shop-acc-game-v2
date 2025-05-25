@@ -19,6 +19,8 @@ function ChangePassword() {
         });
     const handleSubmit = (e) => {
         e.preventDefault();
+        console.log(form);
+
         showAlert("success", "Đã đổi mật khẩu thành công");
     };
     return (
@@ -35,7 +37,7 @@ function ChangePassword() {
                                 type="password"
                                 placeholder="Mật khẩu cũ của bạn"
                                 id="oldPassword"
-                                name="game_account"
+                                name="oldPassword"
                                 onChange={handleChange}
                                 required
                             />
