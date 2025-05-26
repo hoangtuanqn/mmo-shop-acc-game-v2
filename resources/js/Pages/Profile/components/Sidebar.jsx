@@ -31,7 +31,7 @@ export default function Sidebar() {
         {
             src: "https://cdn3.upanh.info/upload/server-sw3/images/Icon/Ma%20gi%E1%BB%9Bi%20thi%E1%BB%87u.png",
             name: "Giới thiệu bạn bè",
-            url: route('profile.affiliate'),
+            url: route("profile.affiliate"),
         },
         {
             src: "https://cdn3.upanh.info/upload/server-sw3/images/Icon/Minigame%20gi%E1%BB%9Bi%20thi%E1%BB%87u%20b%E1%BA%A1n%20be.png",
@@ -142,12 +142,7 @@ export default function Sidebar() {
     return (
         <>
             {/* User Info */}
-            <section className="relative overflow-hidden rounded-3xl border border-blue-100 bg-gradient-to-br from-white via-blue-50 to-blue-100 px-7 py-6 shadow-xs">
-                <div className="pointer-events-none absolute top-0 right-0 opacity-10">
-                    <svg width="120" height="120" fill="none">
-                        <circle cx="60" cy="60" r="60" fill="#3B82F6" />
-                    </svg>
-                </div>
+            <section className="relative overflow-hidden rounded-3xl border border-blue-100 bg-white px-7 py-6 shadow-xs">
                 <h4 className="mb-5 border-b border-blue-100 pb-2 pl-1 text-base font-bold tracking-wide">
                     Thông tin của bạn
                 </h4>

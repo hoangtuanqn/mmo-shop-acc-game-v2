@@ -12,6 +12,8 @@ import {
     FaFacebookF,
     FaYoutube,
 } from "react-icons/fa";
+import { IoMdLogIn } from "react-icons/io";
+import { FiUserPlus } from "react-icons/fi";
 import { route } from "ziggy-js";
 import Button from "./Form/Button";
 import { formatPhone } from "../utils/functions";
@@ -79,13 +81,15 @@ export default function Header() {
                     <div className="hidden gap-2 xl:flex">
                         <Link
                             href={route("auth.login")}
-                            className="rounded-lg border border-blue-500 px-5 py-2 text-center font-semibold text-blue-500 transition hover:bg-blue-50"
+                            className="ht-flex-center gap-1 rounded-lg border border-blue-500 px-5 py-2 text-center font-semibold text-blue-500 transition hover:bg-blue-50"
                         >
-                            Đăng nhập
+                            <IoMdLogIn />
+                            <span>Đăng nhập</span>
                         </Link>
 
                         <Button href={route("auth.register")} Element="Link">
-                            Đăng ký
+                            <FiUserPlus />
+                            <span>Đăng ký</span>
                         </Button>
                         {/* <Link
                         href={route("auth.register")}
