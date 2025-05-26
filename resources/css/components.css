@@ -29,4 +29,10 @@
     .ht-text-primary {
         @apply text-primary font-bold duration-75 hover:text-[#ff6cb6];
     }
+    .ht-flash-sale-active {
+        @apply bg-[url(/public/images/bg-flash-sale.png)] text-white;
+    }
+    .ht-sold-out {
+        @apply before:absolute before:inset-0 before:z-20 before:bg-[#ffffffc7] before:bg-[url(/public/images/sold-out.png)] before:bg-size-[45%] before:bg-center before:bg-no-repeat before:select-none;
+    }
 }

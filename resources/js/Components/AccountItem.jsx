@@ -13,7 +13,7 @@ export default function AccountItem({ account }) {
             href={route("accounts.detail", {
                 slug: 123,
             })}
-            className="relative flex flex-col overflow-hidden rounded-lg border border-[#f0f0f0] shadow-[0_10px_20px_rgba(0,0,0,0.05)] duration-200 hover:transform-[translateY(-4px)] hover:bg-[#e8f0ff] hover:shadow-[0_10px_25px_rgba(10,106,255,0.12)]"
+            className={`relative flex flex-col overflow-hidden rounded-lg border border-[#f0f0f0] shadow-[0_10px_20px_rgba(0,0,0,0.05)] duration-200 hover:transform-[translateY(-4px)] hover:bg-[#e8f0ff] hover:shadow-[0_10px_25px_rgba(10,106,255,0.12)]`}
         >
             <span className="bg-primary absolute top-2 left-2 z-10 hidden rounded-lg px-[10px] py-[5px] text-xs font-medium text-white md:block">
                 MS: #123456

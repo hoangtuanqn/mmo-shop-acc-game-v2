@@ -1,7 +1,7 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "yet-another-react-lightbox/styles.css";
 import { Box } from "@mui/material";
+import "yet-another-react-lightbox/styles.css";
 import "swiper/css";
 import AccountItem from "../../components/AccountItem";
 

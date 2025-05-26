@@ -13,6 +13,7 @@ import {
     histories,
 } from "./fakerData";
 import Dialog from "../../components/Dialog";
+import FlashSaleAccount from "./FlashSaleAccount";
 
 export default function Home() {
     return (
@@ -22,6 +23,7 @@ export default function Home() {
 
             {/* Hiển thị tất cả các thể loại game */}
             <CategoriesPopular data={dataCategoriesCommon} />
+            <FlashSaleAccount />
 
             {/* Danh mục Tài khoản Game */}
             {dataCategoriesGame.map((category) => (

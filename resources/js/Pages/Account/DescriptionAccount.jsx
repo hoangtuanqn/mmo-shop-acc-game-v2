@@ -9,8 +9,8 @@ export default function DescriptionAccount() {
     const [showConfirm, setShowConfirm] = useState(false);
     return (
         <>
-            <div className="flex w-full flex-col rounded-xl bg-white p-4 shadow-sm lg:basis-5/12">
-                <div className="order-1 border-b border-slate-300 pb-2">
+            <div className="flex w-full flex-col rounded-xl bg-white p-4 shadow-sm lg:basis-5/12 relative">
+                <div className="order-1 border-b border-slate-300 pb-2 ht-sold-out">
                     <h1 className="to-primary from-pink-second bg-gradient-to-l bg-clip-text pt-2 text-lg font-bold text-transparent lg:text-xl">
                         Tài Khoản Game Free Fire
                     </h1>
