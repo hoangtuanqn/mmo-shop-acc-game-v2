@@ -20,7 +20,7 @@ export default function PrevNextImage({ handleClick, images, idPreviewLive }) {
                     <IoArrowForward />
                 </div>
             </div>
-            <div className="ht-flex-center border-primary gap-2 rounded-lg border px-6 py-1 md:py-2">
+            <div className="ht-flex-center border-primary gap-2 rounded-lg border px-6 py-2">
                 <FaFileImage />
                 <span>
                     {idPreviewLive + 1} / {images.length}
