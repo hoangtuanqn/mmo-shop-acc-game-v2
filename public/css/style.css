@@ -55,7 +55,7 @@
     background-color: #f8fafc;
     border-radius: 10px;
     color: #4b5563;
-    font-size: 15px;
+    font-size: 11px;
     line-height: 1.7;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     position: relative;
@@ -72,7 +72,7 @@
     background: linear-gradient(to bottom, var(--color-primary), #4f46e5);
 }
 .htcustom-description h1 {
-    font-size: 1.25rem;
+    font-size: 0.9rem;
     font-weight: 700;
     color: #1e293b;
     margin-bottom: 14px;
@@ -83,8 +83,11 @@
 
 @media (min-width: 40rem) {
     /* sm */
+    .htcustom-description:not(.htcustom-news) {
+        font-size: 12px;
+    }
     .htcustom-description h1 {
-        font-size: 1.5rem;
+        font-size: 1.05rem;
         margin-bottom: 16px;
         padding-bottom: 10px;
     }
@@ -92,8 +95,11 @@
 
 @media (min-width: 48rem) {
     /* md */
+    .htcustom-description:not(.htcustom-news) {
+        font-size: 13px;
+    }
     .htcustom-description h1 {
-        font-size: 1.75rem;
+        font-size: 1.2rem;
         margin-bottom: 18px;
         padding-bottom: 12px;
     }
@@ -101,8 +107,11 @@
 
 @media (min-width: 64rem) {
     /* lg */
+    .htcustom-description:not(.htcustom-news) {
+        font-size: 14px;
+    }
     .htcustom-description h1 {
-        font-size: 2rem;
+        font-size: 1.4rem;
         margin-bottom: 20px;
         padding-bottom: 14px;
     }
@@ -143,7 +152,7 @@
 }
 
 .htcustom-description h2 {
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     font-weight: 700;
     color: #1e293b;
     margin-bottom: 14px;
@@ -154,7 +163,7 @@
 @media (min-width: 40rem) {
     /* sm */
     .htcustom-description h2 {
-        font-size: 1.25rem;
+        font-size: 0.9rem;
         margin-bottom: 16px;
         padding-bottom: 10px;
     }
@@ -162,7 +171,7 @@
 @media (min-width: 48rem) {
     /* md */
     .htcustom-description h2 {
-        font-size: 1.35rem;
+        font-size: 1rem;
         margin-bottom: 18px;
         padding-bottom: 12px;
     }
@@ -170,7 +179,7 @@
 @media (min-width: 64rem) {
     /* lg */
     .htcustom-description h2 {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
         margin-bottom: 20px;
         padding-bottom: 14px;
     }
@@ -211,7 +220,7 @@
 }
 
 .htcustom-description h3 {
-    font-size: 1rem;
+    font-size: 0.75rem;
     font-weight: 600;
     color: #334155;
     margin: 18px 0 10px;
@@ -219,27 +228,27 @@
 @media (min-width: 40rem) {
     /* sm */
     .htcustom-description h3 {
-        font-size: 1.1rem;
+        font-size: 0.85rem;
         margin: 20px 0 12px;
     }
 }
 @media (min-width: 48rem) {
     /* md */
     .htcustom-description h3 {
-        font-size: 1.15rem;
+        font-size: 0.95rem;
         margin: 22px 0 14px;
     }
 }
 @media (min-width: 64rem) {
     /* lg */
     .htcustom-description h3 {
-        font-size: 1.2rem;
+        font-size: 1rem;
         margin: 24px 0 16px;
     }
 }
 
 .htcustom-description h4 {
-    font-size: 0.95rem;
+    font-size: 0.7rem;
     font-weight: 600;
     color: #334155;
     margin: 16px 0 8px;
@@ -247,27 +256,27 @@
 @media (min-width: 40rem) {
     /* sm */
     .htcustom-description h4 {
-        font-size: 1rem;
+        font-size: 0.8rem;
         margin: 18px 0 10px;
     }
 }
 @media (min-width: 48rem) {
     /* md */
     .htcustom-description h4 {
-        font-size: 1.05rem;
+        font-size: 0.9rem;
         margin: 20px 0 12px;
     }
 }
 @media (min-width: 64rem) {
     /* lg */
     .htcustom-description h4 {
-        font-size: 1.1rem;
+        font-size: 0.95rem;
         margin: 22px 0 14px;
     }
 }
 
 .htcustom-description h5 {
-    font-size: 0.9rem;
+    font-size: 0.65rem;
     font-weight: 600;
     color: #334155;
     margin: 14px 0 6px;
@@ -275,20 +284,20 @@
 @media (min-width: 40rem) {
     /* sm */
     .htcustom-description h5 {
-        font-size: 0.95rem;
+        font-size: 0.7rem;
         margin: 16px 0 8px;
     }
 }
 @media (min-width: 48rem) {
     /* md */
     .htcustom-description h5 {
-        font-size: 1rem;
+        font-size: 0.8rem;
         margin: 18px 0 10px;
     }
 }
 
 .htcustom-description h6 {
-    font-size: 0.9rem;
+    font-size: 0.6rem;
     font-weight: 600;
     color: #334155;
     margin: 12px 0 6px;
@@ -296,14 +305,14 @@
 @media (min-width: 40rem) {
     /* sm */
     .htcustom-description h6 {
-        font-size: 0.95rem;
+        font-size: 0.7rem;
         margin: 14px 0 8px;
     }
 }
 @media (min-width: 48rem) {
     /* md */
     .htcustom-description h6 {
-        font-size: 1rem;
+        font-size: 0.8rem;
         margin: 16px 0 10px;
     }
 }
@@ -311,17 +320,20 @@
 .htcustom-description p {
     margin-bottom: 14px;
     color: #4b5563;
+    font-size: 0.8rem;
 }
 @media (min-width: 40rem) {
     /* sm */
     .htcustom-description p {
         margin-bottom: 16px;
+        font-size: 0.9rem;
     }
 }
 @media (min-width: 48rem) {
     /* md */
     .htcustom-description p {
         margin-bottom: 18px;
+        font-size: 1rem;
     }
 }
 
@@ -348,17 +360,20 @@
     margin-bottom: 8px;
     position: relative;
     padding-left: 5px;
+    font-size: 0.8rem;
 }
 @media (min-width: 40rem) {
     /* sm */
     .htcustom-description li {
         margin-bottom: 9px;
+        font-size: 0.9rem;
     }
 }
 @media (min-width: 48rem) {
     /* md */
     .htcustom-description li {
         margin-bottom: 10px;
+        font-size: 1rem;
     }
 }
 
@@ -367,20 +382,20 @@
     position: absolute;
     left: -14px;
     color: var(--color-primary);
-    font-size: 14px;
+    font-size: 11px;
 }
 @media (min-width: 40rem) {
     /* sm */
     .htcustom-description ul li::before {
         left: -16px;
-        font-size: 15px;
+        font-size: 12px;
     }
 }
 @media (min-width: 48rem) {
     /* md */
     .htcustom-description ul li::before {
         left: -18px;
-        font-size: 16px;
+        font-size: 13px;
     }
 }
 
@@ -400,6 +415,19 @@
     font-weight: 500;
     position: relative;
     transition: color 0.4s;
+    font-size: 0.8rem;
+}
+@media (min-width: 40rem) {
+    /* sm */
+    .htcustom-description a {
+        font-size: 0.9rem;
+    }
+}
+@media (min-width: 48rem) {
+    /* md */
+    .htcustom-description a {
+        font-size: 1rem;
+    }
 }
 
 .htcustom-description a::after {
@@ -462,6 +490,7 @@
     background-color: rgba(79, 70, 229, 0.04);
     font-style: italic;
     border-radius: 0 6px 6px 0;
+    font-size: 0.8rem;
 }
 @media (min-width: 40rem) {
     /* sm */
@@ -470,6 +499,7 @@
         padding: 12px 16px;
         margin: 16px 0;
         border-radius: 0 7px 7px 0;
+        font-size: 0.9rem;
     }
 }
 @media (min-width: 48rem) {
@@ -478,6 +508,7 @@
         padding: 15px 20px;
         margin: 20px 0;
         border-radius: 0 8px 8px 0;
+        font-size: 1rem;
     }
 }
 
@@ -489,12 +520,14 @@
     border: 1px solid #e5e7eb;
     border-radius: 6px;
     overflow: hidden;
+    font-size: 0.8rem;
 }
 @media (min-width: 40rem) {
     /* sm */
     .htcustom-description table {
         margin: 16px 0;
         border-radius: 7px;
+        font-size: 0.9rem;
     }
 }
 @media (min-width: 48rem) {
@@ -502,6 +535,7 @@
     .htcustom-description table {
         margin: 20px 0;
         border-radius: 8px;
+        font-size: 1rem;
     }
 }
 
@@ -544,17 +578,20 @@
 .htcustom-description ol {
     list-style-type: decimal;
     padding-left: 5px;
+    font-size: 0.8rem;
 }
 @media (min-width: 40rem) {
     /* sm */
     .htcustom-description ol {
         padding-left: 7px;
+        font-size: 0.9rem;
     }
 }
 @media (min-width: 48rem) {
     /* md */
     .htcustom-description ol {
         padding-left: 10px;
+        font-size: 1rem;
     }
 }
 
@@ -598,14 +635,14 @@
     background-color: #f1f5f9;
     border-radius: 5px;
     font-family: monospace;
-    font-size: 14px;
+    font-size: 10px;
 }
 @media (min-width: 40rem) {
     /* sm */
     .htcustom-description pre,
     .htcustom-description code {
         border-radius: 6px;
-        font-size: 15px;
+        font-size: 11px;
     }
 }
 @media (min-width: 48rem) {
@@ -613,7 +650,7 @@
     .htcustom-description pre,
     .htcustom-description code {
         border-radius: 6px;
-        font-size: 16px;
+        font-size: 12px;
     }
 }
 
@@ -679,35 +716,35 @@
 .htcustom-description figcaption {
     text-align: center;
     color: #6b7280;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     margin-top: 6px;
     font-style: italic;
 }
 @media (min-width: 40rem) {
     /* sm */
     .htcustom-description figcaption {
-        font-size: 1.2rem;
+        font-size: 1rem;
         margin-top: 7px;
     }
 }
 @media (min-width: 48rem) {
     /* md */
     .htcustom-description figcaption {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         margin-top: 8px;
     }
 }
 
 .htcustom-description sup,
 .htcustom-description sub {
-    font-size: 70%;
+    font-size: 60%;
     line-height: 0;
 }
 @media (min-width: 40rem) {
     /* sm */
     .htcustom-description sup,
     .htcustom-description sub {
-        font-size: 75%;
+        font-size: 65%;
     }
 }
 

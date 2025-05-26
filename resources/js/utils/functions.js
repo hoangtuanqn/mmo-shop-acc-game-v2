@@ -1,7 +1,8 @@
 import Swal from "sweetalert2";
 
 export function formatNumber(amount) {
-    return new Intl.NumberFormat("en-US").format(amount);
+    // Dấu , sử dụng en-US. Dấu . sử dụng vi-VN
+    return new Intl.NumberFormat("vi-VN").format(amount);
 }
 export function subString(string) {
     const length = string.length;

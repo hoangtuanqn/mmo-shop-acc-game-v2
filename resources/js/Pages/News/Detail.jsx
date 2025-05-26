@@ -4,10 +4,10 @@ import { FaCalendarAlt } from "react-icons/fa";
 export default function Detail() {
     return (
         <div className="mb-20 rounded-lg bg-white p-8">
-            <div className="flex items-center gap-2 font-bold text-gray-400">
+            <div className="flex items-center gap-2 font-bold text-gray-400 text-xs">
                 <FaCalendarAlt /> <span>20/5/2025 - 20:08:30</span>
             </div>
-            <div className="htcustom-description htcustom-news mt-2">
+            <div className="htcustom-description htcustom-news mt-4 lg:mt-2">
                 <h1>Vietnix ra mắt VPS N8N – Giải pháp tối ưu hiệu suất và bảo mật cho tự động hóa quy trình</h1>
                 <p>
                     Từ ngày 15/05/2025, Vietnix chính thức ra mắt dịch vụ VPS N8N – giải pháp tối ưu giúp người dùng
