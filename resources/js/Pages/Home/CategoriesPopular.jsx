@@ -3,7 +3,7 @@ import HeadLine from "../../components/Headline";
 
 export default function Category({ data }) {
     return (
-        <div className="mb-20">
+        <div className="mb-12">
             <HeadLine title={"Danh mục game phổ biến"} />
             <div className="grid grid-cols-2 gap-x-2 gap-y-4 sm:grid-cols-3 lg:grid-cols-5">
                 {data.map((item) => (

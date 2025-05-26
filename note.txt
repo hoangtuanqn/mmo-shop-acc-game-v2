@@ -23,3 +23,5 @@
 + Liên hệ admin (Note: Ví dụ acc cần đổi thông tin phức tạp, ...)
 
 - Thêm phần khung gờ xem
+
+- Từ khóa đi sale: Dễ sử dụng tuyệt đối -> Khách hàng thích cái mà dễ sử dụng
