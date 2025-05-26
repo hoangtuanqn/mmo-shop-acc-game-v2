@@ -6,6 +6,9 @@ import { Box } from "@mui/material";
 import "swiper/css";
 import DescriptionAccount from "./DescriptionAccount";
 import PrevNextImage from "./PrevNextImage";
+import HeadLineCenter from "../../components/HeadLineCenter";
+import LoadingAnimation from "../../components/LoadingAnimation";
+import SuggestAccount from "./SuggestAccount";
 export default function Account() {
     const [idPreviewLive, setIdPreviewLive] = useState(0);
     const swiperRef = useRef(null);
@@ -80,6 +83,12 @@ export default function Account() {
                         </div>
                     </div>
                     <DescriptionAccount />
+                </div>
+                <div className="mt-8 rounded-xl p-4">
+                    <HeadLineCenter title="Tài khoản game tương tự" />
+                    <LoadingAnimation ms={500}>
+                        <SuggestAccount />
+                    </LoadingAnimation>
                 </div>
             </div>
             <Lightbox
