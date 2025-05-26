@@ -26,7 +26,7 @@ export default function GoToTop() {
         isVisible && (
             <button
                 onClick={scrollToTop}
-                className="bg-primary hover:text-primary border-primary fixed right-5 bottom-15 cursor-pointer rounded-full border p-3 text-base text-white duration-200 hover:bg-white md:right-10 md:p-4 md:text-xl"
+                className="bg-primary hover:text-primary border-primary fixed right-5 bottom-18 z-1000 cursor-pointer rounded-full border p-2.5 text-base text-white duration-200 hover:bg-white md:right-10 md:p-3.5 md:text-xl lg:text-2xl"
             >
                 <BiSolidArrowToTop />
             </button>

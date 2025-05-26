@@ -11,7 +11,7 @@ export default function index() {
             <HeadLineCenter title="TIN TỨC MỚI NHẤT" />
             <div className="grid grid-cols-3 items-start">
                 {/* Hiển thị danh sách bài viết */}
-                <div className="col-span-3 grid grid-cols-1 gap-x-1.5 gap-y-2.5 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-3">
+                <div className="col-span-3 grid grid-cols-1 gap-x-2.5 gap-y-4 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-3">
                     {dataNews.map((post, index) => (
                         <Post key={`Post-${index}`} post={post} index={index} />
                     ))}

@@ -16,3 +16,10 @@
 - thêm phần chia sẽ bài viết (Sử dụng headmet cho bài viết)
 
 - fix reponsive hình ảnh trang mua acc
+- Thêm phần mua bán vật phẩm (Xu kim cương, ... tft, ...)
+
+- Hình thức nhận acc
++ Trực tiếp trên website
++ Liên hệ admin (Note: Ví dụ acc cần đổi thông tin phức tạp, ...)
+
+- Thêm phần khung gờ xem

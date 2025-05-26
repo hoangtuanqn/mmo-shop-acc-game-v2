@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "@inertiajs/react";
-import { route } from "ziggy-js";
 import { PiGameControllerBold } from "react-icons/pi";
 import { FaCubes, FaShoppingCart } from "react-icons/fa";
 import { TiStar } from "react-icons/ti";
 import { formatNumber } from "../../utils/functions";
 import HeadLine from "./../../components/Headline";
 import CategoryStats from "./CategoryStats";
-import { IoIosPricetags, IoMdPricetag } from "react-icons/io";
+import { IoMdPricetag } from "react-icons/io";
+import { AiOutlineTransaction } from "react-icons/ai";
 
 export default function Categories({ nameCategory, categories, url = "/", urlIconImage, type }) {
     return (
@@ -62,9 +62,9 @@ export default function Categories({ nameCategory, categories, url = "/", urlIco
 
                                     {type === "service" && (
                                         <CategoryStats
-                                            name="Đã thuê:"
+                                            name="Giao dịch:"
                                             value={formatNumber(category.sold)}
-                                            Icon={<FaShoppingCart />}
+                                            Icon={<AiOutlineTransaction />}
                                         />
                                     )}
                                     {type === "tryYourLuck" && (
