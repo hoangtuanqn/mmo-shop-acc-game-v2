@@ -6,6 +6,9 @@ import { FaUserFriends, FaCopy, FaMoneyBillWave } from "react-icons/fa";
 import Button from "../../../components/Form/Button";
 import { showAlert } from "../../../utils/functions";
 import { BiMoneyWithdraw } from "react-icons/bi";
+import Pagination from "../../../components/Pagination";
+import { usePaginatedData } from "../../../hooks/usePaginatedData";
+import LoadingAnimation from "../../../components/LoadingAnimation";
 
 const history = [
     { id: 1, name: "Nguyễn Văn A", date: "2024-06-01 10:00", reward: 10000 },
@@ -26,6 +29,14 @@ function Affiliate() {
         showAlert("success", "Đã sao chép mã giới thiệu thành công!");
     };
     const handleWithdraw = () => {};
+
+    const { data, currentPage, pageCount, loading, error, setPage } = usePaginatedData(
+        "https://polysite.htuanqn.id.vn/proxy.php",
+        10,
+    );
+    const handlePageClick = ({ selected }) => {
+        setPage(selected);
+    };
 
     return (
         <div className="mx-auto rounded-3xl border border-gray-100 bg-white px-7 py-8 shadow-xs">
@@ -73,6 +84,35 @@ function Affiliate() {
                         <li>Ăn hoa hồng trọn đời, không giới hạn</li>
                     </ul>
                 </div>
+            </div>
+
+            <div className="relative mt-4 overflow-x-auto sm:rounded-lg">
+                <table className="w-full text-left text-sm text-gray-500 rtl:text-right dark:text-gray-400">
+                    <thead className="bg-gray-50 text-xs text-gray-700 uppercase dark:bg-gray-700 dark:text-gray-400">
+                        <tr>
+                            <th className="px-6 py-3">Title</th>
+                            <th className="px-6 py-3">Body</th>
+                        </tr>
+                    </thead>
+                    <tbody className="relative">
+                        {!loading ? (
+                            data.map((item, index) => (
+                                <tr
+                                    key={index}
+                                    className="border-b border-gray-200 hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-600"
+                                >
+                                    <th className="px-6 py-4 font-medium whitespace-nowrap text-gray-900 dark:text-white">
+                                        {item.title}
+                                    </th>
+                                    <td className="px-6 py-4">{item.body}</td>
+                                </tr>
+                            ))
+                        ) : (
+                            <LoadingAnimation infinite />
+                        )}
+                    </tbody>
+                </table>
+                <Pagination pageCount={pageCount} currentPage={currentPage} onPageChange={handlePageClick} />
             </div>
         </div>
     );

@@ -14,3 +14,5 @@
 - phát triển tính năng bán vật phẩm như CMSNT
 
 - thêm phần chia sẽ bài viết (Sử dụng headmet cho bài viết)
+
+- fix reponsive hình ảnh trang mua acc
