@@ -53,7 +53,7 @@ export default function GameFlipCard() {
                             <img
                                 src="/images/faker/flip-card/cardBack.png"
                                 alt="Mặt sau"
-                                className="h-full w-full object-cover"
+                                className="aspect-square h-full w-full object-cover"
                             />
                         </div>
 
@@ -68,7 +68,7 @@ export default function GameFlipCard() {
                             <img
                                 src="https://cdn3.upanh.info/upload/server-sw3/images/500%20KC(2).jpg"
                                 alt="Mặt trước"
-                                className="h-full w-full object-cover"
+                                className="aspect-square h-full w-full object-cover"
                             />
                         </div>
                     </div>

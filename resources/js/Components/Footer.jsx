@@ -184,15 +184,19 @@ export default function Footer() {
                             </ul>
                         </div>
                     </div>
-                    <address className="mt-6 text-center leading-7 text-white">
-                        &copy; 2025 - Bản quyền thuộc về{" "}
-                        <Link href="/" className="text-pink-second">
-                            LOCALHOST
-                        </Link>{" "}
-                        - Thiết kế bởi{" "}
-                        <a href="https://tuanori.vn/" className="text-pink-second">
-                            TUANORI.VN
-                        </a>
+                    <address className="ht-flex-center mt-6 flex-col gap-1 text-center leading-7 text-white sm:flex-row">
+                        <div className="ht-flex-center gap-1">
+                            &copy; {new Date().getFullYear()} - Bản quyền thuộc về
+                            <Link href="/" className="text-pink-second font-bold">
+                                LOCALHOST
+                            </Link>
+                        </div>
+                        <div className="ht-flex-center gap-1">
+                            <span className="hidden sm:block">-</span> Thiết kế bởi{" "}
+                            <a href="https://tuanori.vn/" target="_blank" className="text-pink-second font-bold">
+                                TUANORI.VN
+                            </a>
+                        </div>
                     </address>
                 </div>
             </footer>

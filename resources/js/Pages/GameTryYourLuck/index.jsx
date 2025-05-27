@@ -13,6 +13,7 @@ import { historiesWheel, winningSlot, messageWinning } from "./fakerData";
 import { formatNumber, random, showAlert, showAlertImage } from "../../utils/functions";
 import GameWheelLucky from "../GameWheelLucky";
 import GameFlipCard from "../GameFlipCard";
+import ActionFixedBottom from "./ActionFixedBottom";
 export default function LuckyWheel({ type = "luckyWheel" }) {
     const price = 9000;
     const [deg, setDeg] = useState(0);
@@ -78,13 +79,13 @@ export default function LuckyWheel({ type = "luckyWheel" }) {
                         <MarqueeData histories={historiesWheel} custom="hidden lg:flex" />
                         <section className="mb-20 rounded-xl">
                             <div className="flex flex-col items-start gap-6 lg:flex-row lg:gap-2">
-                                <section className="overflow-hidden border border-gray-500 basis-2/3 rounded-xl">
+                                <section className="basis-2/3 overflow-hidden rounded-xl border border-gray-500">
                                     <div className="bg-linear-60 from-blue-500 to-purple-500 p-3.5">
-                                        <h2 className="text-base font-bold text-center text-white uppercase lg:text-xl">
+                                        <h2 className="text-center text-base font-bold text-white uppercase lg:text-xl">
                                             Lật thẻ săn kim cương
                                         </h2>
                                     </div>
-                                    <div className="flex flex-col items-center justify-center pb-8 bg-white">
+                                    <div className="flex flex-col items-center justify-center bg-white pb-8">
                                         {type === "luckyWheel" && (
                                             <GameWheelLucky
                                                 handlePlay={handlePlay}
@@ -94,14 +95,14 @@ export default function LuckyWheel({ type = "luckyWheel" }) {
                                             />
                                         )}
                                         {type === "flipCard" && <GameFlipCard />}
-                                        <div className="w-[100%] pt-8 px-4 lg:w-[70%]">
+                                        <div className="w-[100%] px-4 pt-8 lg:w-[70%]">
                                             <form
                                                 action=""
-                                                className="flex-col w-full gap-4 ht-flex-center"
+                                                className="ht-flex-center w-full flex-col gap-4"
                                                 onSubmit={(e) => e.preventDefault()}
                                             >
                                                 <div className="flex w-full gap-2">
-                                                    <div className="flex flex-col flex-1">
+                                                    <div className="flex flex-1 flex-col">
                                                         <label
                                                             htmlFor="sort-order"
                                                             className="font-medium text-gray-600"
@@ -117,7 +118,7 @@ export default function LuckyWheel({ type = "luckyWheel" }) {
                                                         </Select>
                                                     </div>
 
-                                                    <div className="flex flex-col flex-1">
+                                                    <div className="flex flex-1 flex-col">
                                                         <label htmlFor="code" className="font-medium text-gray-600">
                                                             Mã giảm giá
                                                         </label>
@@ -157,8 +158,8 @@ export default function LuckyWheel({ type = "luckyWheel" }) {
                                     </div>
                                 </section>
 
-                                <section className="w-full px-4 border border-gray-500 basis-1/3 rounded-xl">
-                                    <div className="flex gap-2 py-4 border-b border-gray-600">
+                                <section className="w-full basis-1/3 rounded-xl border border-gray-500 px-4">
+                                    <div className="flex gap-2 border-b border-gray-600 py-4">
                                         <Button mode="transparent" Element="Link" href="/" className="flex-1">
                                             <ImHistory /> Lịch Sử Quay
                                         </Button>
@@ -175,6 +176,7 @@ export default function LuckyWheel({ type = "luckyWheel" }) {
                     </div>
                 </div>
             </div>
+            {/* <ActionFixedBottom action={handlePlay} isPending={isSpinning} /> */}
         </>
     );
 }

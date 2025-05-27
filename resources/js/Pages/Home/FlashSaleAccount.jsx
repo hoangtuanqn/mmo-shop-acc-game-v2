@@ -11,7 +11,7 @@ export default function FlashSaleAccount() {
     const listAccounts = [0, 1, 2, 4, 5, 6, 7, 8, 9, 10];
     return (
         <div className="mb-20">
-            <div className="overflow-hidden rounded-xl border border-gray-500 bg-white">
+            <div className="overflow-hidden rounded-xl border border-gray-500">
                 <div className="bg-primary/95 flex items-center justify-between px-2 py-4">
                     <h2 className="flex items-center gap-1 text-xl font-bold text-white uppercase">
                         <img src="/images/icons/flash-sale.png" alt="" className="aspect-auto" />
@@ -22,12 +22,12 @@ export default function FlashSaleAccount() {
                         <FcFlashOn className="text-base" />
                     </Button>
                 </div>
-                <div className="bg-[#f1f5f9] p-2">
+                <div className="mt-3 bg-[#f1f5f9] p-2">
                     <div className="grid grid-cols-3 gap-2 overflow-hidden rounded-xl bg-white text-slate-400 md:grid-cols-6">
                         {Array.from({ length: 6 }).map((_, index) => (
                             <div
                                 key={`flash-sale-${index}`}
-                                className={`ht-flex-center cursor-pointer flex-col p-2 ${index === 0 ? "ht-flash-sale-active" : ""}`}
+                                className={`ht-flex-center cursor-pointer flex-col p-2 ${index === 0 ? "ht-flash-sale-active" : "hover:text-slate-300"}`}
                             >
                                 <span className="text-xl font-bold md:text-2xl">11:30</span>
                                 <span className="text-xs font-semibold md:text-sm">Đã kết thúc</span>
@@ -58,7 +58,7 @@ export default function FlashSaleAccount() {
                             {/* Ưu tiên hiển thị những acc chưa bán - Acc đã bán rồi dồn về sau nếu ít - ẩn đi cho những acc chưa bán nếu nhiều */}
                             {listAccounts.map((account, index) => (
                                 <SwiperSlide key={`Accont-Game-${index}`}>
-                                    <div className="relative">
+                                    <div className="relative overflow-hidden rounded-lg">
                                         <div className={`${index === 1 ? "ht-sold-out" : ""}`}>
                                             <AccountItem key={`Account-${index}`} account={account} />
                                         </div>

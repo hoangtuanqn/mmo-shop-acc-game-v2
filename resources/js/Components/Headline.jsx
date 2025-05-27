@@ -5,7 +5,7 @@ import { FaArrowTrendUp } from "react-icons/fa6";
 import { GiPerspectiveDiceSixFacesRandom } from "react-icons/gi";
 import { RxColorWheel } from "react-icons/rx";
 
-export default function HeadLine({ title, url = "", customHeading, type = "" }) {
+export default function HeadLine({ title, url = "", customHeading = "", type = "" }) {
     const iconMap = {
         account: FaGamepad,
         service: FaGamepad,

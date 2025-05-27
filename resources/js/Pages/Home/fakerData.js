@@ -12,7 +12,7 @@ export const dataCategoriesCommon = [
     {
         id: 3,
         name: "Free Fire",
-        image: "https://play-lh.googleusercontent.com/6llpraFcTI0rEUuRpWEG9NWWblvm106y5JXcDzu60ACuaUYDD3i70a-p9_QM65NsGDE",
+        image: "https://play-lh.googleusercontent.com/sKh_B4ZLfu0jzqx9z98b2APe2rxDb8dIW-QqFHyS3cpzDK2Qq8tAbRAz3rXzOFtdAw",
     },
     {
         id: 4,
